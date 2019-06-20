@@ -2,3 +2,6 @@
 /src/.vs/
 /src/obj/
 /src/packages/
+/src/TestForm/obj/
+/src/TestForm/bin/
+/Test/obj/

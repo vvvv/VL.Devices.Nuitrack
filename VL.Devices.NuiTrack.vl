@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.1.0-0420-gd786f06fc5" Version="0.128">
+  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.1.0-249" />
+  <Patch Id="OF6M52TF0g1MIvRz41ucGu">
+    <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Kinect2" CanvasType="FullCategory">
+      <!--
+
+    ************************ RGB (Reactive) ************************
+
+-->
+      <Node Name="RGB (Reactive)" Bounds="511,577" Id="CG6LVbkg6wiQYJHAP2azGD">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="Af9kSdrvEAcNo1g0FxTe12">
+          <Canvas Id="DnjSmcxVgmzO50huXroIYf" CanvasType="Group">
+            <Node Bounds="608,242,46,19" Id="Qgh2LG1fUfkLWtRTXhCSVj">
+              <p:NodeReference LastCategoryFullName="nuitrack.ColorSensor" LastSymbolSource="nuitrack.net.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="ColorSensor" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <CategoryReference Kind="AssemblyCategory" Name="ColorSensor" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Il1oSoHoOBeMx3MKrDRdM9" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="FMfXf1WS3tcQHDNJ35gq9z" SlotId="JXcI6kNi0DBLA7AjdvTcLf" Bounds="610,322">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="608,352,102,19" Id="LOvsMesDe5XQad32fyEW9J">
+              <p:NodeReference LastCategoryFullName="VL.Devices.Nuitrack.FrameExtensions" LastSymbolSource="VL.Devices.Nuitrack.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="FrameExtensions" />
+                <Choice Kind="OperationCallFlag" Name="ColorFrameArrived" />
+              </p:NodeReference>
+              <Pin Id="QpP8GRDP3V8MMCl8cZPyyP" Name="Sensor" Kind="InputPin" />
+              <Pin Id="UC2MKbkkSkEL16vjifCqiA" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="608,505,65,19" Id="FQxLdWVJrKsMa3H7e0d4Xh">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="HkDbPK9TeKxLWtDogWC8XE" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="VizsKzgXmJeMXIX7Icxm2D" Name="Reset" Kind="InputPin" />
+              <Pin Id="GhpxVNKlr56Pn890qJHxb7" Name="Value" Kind="OutputPin" />
+              <Pin Id="LLjqvNcIeZhLr9G7hvIe1u" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Di4FLIwl3JjLmT8xa45FKz" Comment="On Data" Bounds="670,562,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Smtk4aNpQgCNdm3Oazy91s" SlotId="QeVdbwVZtsjNgYEvvcApdq" Bounds="610,432">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="576,595,85,19" Id="HeAc8LHajrVOwEiGNsT1vE">
+              <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Counter" />
+              </p:NodeReference>
+              <Pin Id="G01YxuxpUsIPsds0tvKuwV" Name="Increment" Kind="InputPin" />
+              <Pin Id="SZMXJo4bFkMPPOaaxnit6k" Name="Default" Kind="InputPin" />
+              <Pin Id="R2FhLAhlljWP2pud9SgODY" Name="Up" Kind="ApplyPin" />
+              <Pin Id="B0PQnUxiejSMPFUP3TaFmX" Name="Down" Kind="ApplyPin" />
+              <Pin Id="EnHNGdvov3rL5p4TtmXKwy" Name="Reset" Kind="ApplyPin" />
+              <Pin Id="EjeFzfSmB90LVTNSPZj9Mx" Name="Value" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JPDx5K0fkUXPvqbZeZ2UON" Comment="" Bounds="578,636,32,15" ShowValueBox="true" isIOBox="true" />
+            <ControlPoint Id="AUOljpK667tLjBDKqle5xR" Bounds="713,646" />
+          </Canvas>
+          <Patch Id="T5Xx8SnPJgvNWGndFhRMH1" Name="Create" ParticipatingElements="Qgh2LG1fUfkLWtRTXhCSVj,LOvsMesDe5XQad32fyEW9J" />
+          <Patch Id="LVIcbZXKy0vLU9NS0TRnvD" Name="Update">
+            <Pin Id="HLeEFSXtQMbQXQDQS8u81Q" Name="Output" Kind="OutputPin" Bounds="713,646" />
+          </Patch>
+          <ProcessDefinition Id="SUVi0bxRUomNWEywxiyprg">
+            <Fragment Id="IIpwToIUNi0MGMeHeobkFx" Patch="T5Xx8SnPJgvNWGndFhRMH1" Enabled="true" />
+            <Fragment Id="K3vYGdYvunyLoM4sRgNiKC" Patch="LVIcbZXKy0vLU9NS0TRnvD" Enabled="true" />
+          </ProcessDefinition>
+          <Slot Id="JXcI6kNi0DBLA7AjdvTcLf" Name="ColorSensor" />
+          <Link Id="Nr0KfAX4UnOO7kP693rBJ6" Ids="Il1oSoHoOBeMx3MKrDRdM9,FMfXf1WS3tcQHDNJ35gq9z" />
+          <Link Id="AofflnLSzvVPQvQYJKR0U6" Ids="FMfXf1WS3tcQHDNJ35gq9z,QpP8GRDP3V8MMCl8cZPyyP" />
+          <Link Id="MlejXAgibfiNdze3Y5o7Xq" Ids="LLjqvNcIeZhLr9G7hvIe1u,Di4FLIwl3JjLmT8xa45FKz" />
+          <Slot Id="QeVdbwVZtsjNgYEvvcApdq" Name="ColorFrameObservable" />
+          <Link Id="OOfsFJG4NiSLhjwOiBchyM" Ids="UC2MKbkkSkEL16vjifCqiA,Smtk4aNpQgCNdm3Oazy91s" />
+          <Link Id="VmKIgUGSKHYP0e1zikY1Do" Ids="Smtk4aNpQgCNdm3Oazy91s,HkDbPK9TeKxLWtDogWC8XE" />
+          <Link Id="D9ysGmJe8g7O3i3eQYWH11" Ids="LLjqvNcIeZhLr9G7hvIe1u,R2FhLAhlljWP2pud9SgODY" />
+          <Link Id="ISVt1DXGy5TQLX3GsEQ4DH" Ids="EjeFzfSmB90LVTNSPZj9Mx,JPDx5K0fkUXPvqbZeZ2UON" />
+          <Link Id="Aq1iSDO68ZgQRO5QRE01ro" Ids="Di4FLIwl3JjLmT8xa45FKz,AUOljpK667tLjBDKqle5xR" />
+          <Link Id="DwxXUwreb8bObC9dhCaMPR" Ids="AUOljpK667tLjBDKqle5xR,HLeEFSXtQMbQXQDQS8u81Q" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Nuitrack ************************
+
+-->
+      <Node Name="Nuitrack" Bounds="490,451" Id="LcVzMf1Hkg9MqGULAmghYy">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="QsyqwBNN0VdQEqOHxvXIXI">
+          <Canvas Id="Hb3KhlRtgKYN3aGdqNE9he" CanvasType="Group">
+            <Node Bounds="533,473,51,19" Id="QT89elKlDqxN1EgjWdLIeN">
+              <p:NodeReference LastCategoryFullName="nuitrack.Nuitrack" LastSymbolSource="nuitrack.net.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Nuitrack" />
+                <Choice Kind="OperationCallFlag" Name="Release" />
+              </p:NodeReference>
+              <Pin Id="BwoIS3X6rWEPVybMQT1ukA" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Pad Id="QiSQWyxTOuwNe8vSzdAaJs" SlotId="F8vL7wGpDYQLisGSm64zU5" Bounds="324,334">
+              <p:ValueBoxSettings />
+            </Pad>
+            <ControlPoint Id="R2nfQOsf9LdP5zf01LbJu1" Bounds="324,419" />
+            <Node Bounds="368,155,31,19" Id="CdK2TYvLwZeQLiUqNE0aO2">
+              <p:NodeReference LastCategoryFullName="nuitrack.Nuitrack" LastSymbolSource="nuitrack.net.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Nuitrack" />
+                <Choice Kind="OperationCallFlag" Name="Init" />
+              </p:NodeReference>
+              <Pin Id="FLYCjWVmYwuNRFG5qdNEb8" Name="Config" Kind="InputPin" />
+              <Pin Id="URrN38cjzQvLFANuhqgPzD" Name="Mode" Kind="InputPin" />
+            </Node>
+            <Pad Id="TkAXvb9O1E7McUX4GTLZIj" Bounds="322,203,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="321,265" Id="LOgTW2bXYj3MybejtpY43K">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OR" />
+                <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="OELiceVjh2xM7Ftb858AY1" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FSjS4Uw55r8OvZmLG9sy7X" Name="Input 2" Kind="InputPin" />
+              <Pin Id="HO2wg1vfQn5PdMN8d8fWcF" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="U5u5Quc0AaaMdB7byv6MUQ" SlotId="F8vL7wGpDYQLisGSm64zU5" Bounds="650,526">
+              <p:ValueBoxSettings />
+            </Pad>
+            <Node Bounds="647,465" Id="CyCfRmjr5jTMrBLWqWzQKE">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OR" />
+                <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="TDnkZrSw29iNH0XvAEKYGs" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Pk75kGJMM2UOC2gr8ikL6j" Name="Input 2" Kind="InputPin" />
+              <Pin Id="ThTz7KmEcnoOMRiA5SQttq" Name="Output" Kind="StateOutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="ArGpWZjLLzKOANR3ucxuMU" Name="Create" ParticipatingElements="CdK2TYvLwZeQLiUqNE0aO2,LOgTW2bXYj3MybejtpY43K" />
+          <ProcessDefinition Id="Ov8wNZQsZAnNx81Rm7MsM3" HasStateOut="true">
+            <Fragment Id="Gi9eadc1UxjOtigUvkjv0u" Patch="ArGpWZjLLzKOANR3ucxuMU" Enabled="true" />
+            <Fragment Id="JNUGK00Uj6PMjK1U3aaaJr" Patch="K0iOQ8SdUmGPUkQztrtlU5" Enabled="true" />
+          </ProcessDefinition>
+          <Patch Id="PnG2pxD2Ni4OmmxtDSV7FP" Name="Dispose" ParticipatingElements="QT89elKlDqxN1EgjWdLIeN,CyCfRmjr5jTMrBLWqWzQKE" />
+          <Slot Id="F8vL7wGpDYQLisGSm64zU5" Name="Initialized" />
+          <Link Id="GN2xMSbE5W5LVLpdDjASUU" Ids="QiSQWyxTOuwNe8vSzdAaJs,R2nfQOsf9LdP5zf01LbJu1" />
+          <Link Id="EnEGdXRwl87QIWwqDEyKAv" Ids="R2nfQOsf9LdP5zf01LbJu1,OW5fvG98nyiNdJWkuXOhgm" IsHidden="true" />
+          <Patch Id="K0iOQ8SdUmGPUkQztrtlU5" Name="Update">
+            <Pin Id="OW5fvG98nyiNdJWkuXOhgm" Name="Initialized" Kind="OutputPin" />
+          </Patch>
+          <Link Id="TvJyLAysBPeOg1ExT9goon" Ids="TkAXvb9O1E7McUX4GTLZIj,OELiceVjh2xM7Ftb858AY1" />
+          <Link Id="VHRMtJJpTnlMWwgdjDA9SK" Ids="HO2wg1vfQn5PdMN8d8fWcF,QiSQWyxTOuwNe8vSzdAaJs" />
+          <Link Id="KTfpQ3cKLY2Py0buzjAXUD" Ids="ThTz7KmEcnoOMRiA5SQttq,U5u5Quc0AaaMdB7byv6MUQ" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ioc8DGATiWHLlSltm22gVZ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="B9VHnWpUDwtMWrJDrkMGbr">
+        <Canvas Id="KKPvBJyuMsmNvd753B7qcV" CanvasType="Group" />
+        <Patch Id="OrUUOKZnfmDP2lSxW574Hc" Name="Create" />
+        <Patch Id="NJVYXOkmw7xL3CVxKepxRl" Name="Update" />
+        <ProcessDefinition Id="Io0vKtIZOxTLYioAT5QXlx">
+          <Fragment Id="OVMlYSOVTjELyKMhUMbJYz" Patch="OrUUOKZnfmDP2lSxW574Hc" Enabled="true" />
+          <Fragment Id="QcMTYtPdr4mOOOMipKq1Rz" Patch="NJVYXOkmw7xL3CVxKepxRl" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="S36JEFIXXVvMre7qt6H783" Location="System" />
+  <PlatformDependency Id="JMvORQOQIzrPEj9eCKbrF5" Location="System.Runtime" />
+  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2019.1.0-0344-gd5eabf23a7" />
+  <PlatformDependency Id="BUpgGtLZTuWOOQIIwQPuZE" Location="System.Runtime.InteropServices" />
+  <PlatformDependency Id="FT9TxKi4fH0QMBKSVmLjbM" Location="./lib/net461/nuitrack.net.dll" />
+  <PlatformDependency Id="Tx5Ww8gDWCSLqouiypeaQ1" Location="./lib/net461/VL.Devices.Nuitrack.dll" />
+</Document>

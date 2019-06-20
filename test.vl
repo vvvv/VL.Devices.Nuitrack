@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0420-gd786f06fc5" Version="0.128">
+  <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.1.0-420" />
+  <Patch Id="SOGuJg2kg20OOIaKiNqoH0">
+    <Canvas Id="OLpATbPPMmSLOYa0wesFn0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KhuqF5AjA6yPrpOFuronBw">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="BtGGrtvxpAZP3Rk8sJhEQI">
+        <Canvas Id="F0wvvQ90LXTPrS2tcgIZAV" CanvasType="Group">
+          <Node Bounds="657,308,79,92" Id="SMnqmaso4flOeYvduFK5CI">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.Experimental.vl">
+              <Choice Kind="ProcessAppFlag" Name="ManageProcess" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+            </p:NodeReference>
+            <Pin Id="HebQBPBYhVCPEskPQlnuWe" Name="Enabled" Kind="InputPin" />
+            <Pin Id="F6zKPtDUXA8MPhwlFXVQ6n" Name="Reset" Kind="InputPin" />
+            <Pin Id="JsvyfmUfYv7MiNK9Pye2pX" Name="Result" Kind="OutputPin" />
+            <Patch Id="Iulv6tWM0prOMuBYvYdJrq" ManuallySortedPins="true">
+              <Patch Id="OZ4BzPwrgXsNRfDEwLK9Os" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="JyIkXKHRwM9N73trf79OCl" Name="Update" ManuallySortedPins="true">
+                <Pin Id="PXqkfe3JRgZOqX95FTAbN7" Name="Output" Kind="OutputPin" />
+              </Patch>
+              <ControlPoint Id="Df7q1WC56KZQRbRZ9obu41" Bounds="671,393" />
+              <Node Bounds="669,331,55,19" Id="LN9FPwrQemqOrroL1dIfU9">
+                <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Nuitrack" />
+                </p:NodeReference>
+                <Pin Id="Pe3WRC4ihNtL5QstDiyrre" Name="Initialized" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="VbMJCLcyuoPPCbumnj779G" Comment="" Bounds="659,434,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="654,560,80,80" Id="NbqzvEe24zjL8tdGbo86b6">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="Tg2hStFJPnzOR1fotE6dpz" Name="Condition" Kind="InputPin" />
+            <Patch Id="NCF92LVT0AnM0BS9DVvPsk" ManuallySortedPins="true">
+              <Patch Id="TrsU4ThWfHhPSaBXB3FmNL" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="T1GSnyMiFQqLYprqsxG9j9" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="676,592,35,19" Id="OkhCYs9xA73P8ehB2a5LBA">
+                <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="RGB (Reactive)" />
+                </p:NodeReference>
+                <Pin Id="TKqFkz58FadOALVjy0FC3x" Name="Update" Kind="ApplyPin" />
+              </Node>
+            </Patch>
+          </Node>
+        </Canvas>
+        <Patch Id="PezHqATNMeFLTtksi4UNfQ" Name="Create" />
+        <Patch Id="CDQZ9HZLn4IOcjLct4UiIb" Name="Update" />
+        <ProcessDefinition Id="JlBaJV56q6tNbllbtucKrF">
+          <Fragment Id="Veya6qzFajYNtbX4R0DbJC" Patch="PezHqATNMeFLTtksi4UNfQ" Enabled="true" />
+          <Fragment Id="FU499SennveMurBEPvVkpK" Patch="CDQZ9HZLn4IOcjLct4UiIb" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="BqX3kwJi1e1MFjSKGV6Ye2" Ids="Df7q1WC56KZQRbRZ9obu41,PXqkfe3JRgZOqX95FTAbN7" IsHidden="true" />
+        <Link Id="BiqynkQ1Q3aLVcOG8Y49VK" Ids="Pe3WRC4ihNtL5QstDiyrre,Df7q1WC56KZQRbRZ9obu41" />
+        <Link Id="I2qHL9ns3LYL90geaCk02d" Ids="JsvyfmUfYv7MiNK9Pye2pX,VbMJCLcyuoPPCbumnj779G" />
+        <Link Id="K2nkNnpEU6ULEpHJTEN6Ss" Ids="JsvyfmUfYv7MiNK9Pye2pX,Tg2hStFJPnzOR1fotE6dpz" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="KlH9Yu05DMgQaMxNBLd7ih" Location="VL.Skia" Version="2019.1.0-0420-gd786f06fc5" />
+  <DocumentDependency Id="FquE01ATPFJL0adVvr4Tf9" Location="./VL.Devices.NuiTrack.vl" />
+</Document>
