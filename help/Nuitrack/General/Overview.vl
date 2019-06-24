@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0420-gd786f06fc5" Version="0.128">
+  <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.1.0-420" />
+  <Patch Id="SOGuJg2kg20OOIaKiNqoH0">
+    <Canvas Id="OLpATbPPMmSLOYa0wesFn0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KhuqF5AjA6yPrpOFuronBw">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="BtGGrtvxpAZP3Rk8sJhEQI">
+        <Canvas Id="F0wvvQ90LXTPrS2tcgIZAV" CanvasType="Group">
+          <Node Bounds="80,321,67,19" Id="Qn8Hfgt7cr9MU7LT65IbFn">
+            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="Sk8uCcaIM4sPZohDRPg77u" Name="Input" Kind="InputPin" />
+            <Pin Id="DTntQNMoSGsQRZjkqxFLP8" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="60,367,105,19" Id="OKdYJ7pi6EKNkQYXX1DAQU">
+            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+              <CategoryReference Kind="Category" Name="Sink" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="EKf78vuWJuqOSL19RJYUYW" Name="Bounds" Kind="InputPin" DefaultValue="1013, 54, 512, 318">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="TIq68FJ3tiaOy0jc9hhLxV" Name="Input" Kind="InputPin" />
+            <Pin Id="B7M5HJep8KzLsCyKVVh6Q6" Name="Title" Kind="InputPin" DefaultValue="Nuitrack RGB">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="I02fJqyXSEkNBrDyYw832K" Name="Renderer Mode" Kind="InputPin" />
+            <Pin Id="KKWMCGwAnpDLwJrOOh7PpD" Name="Show Info" Kind="InputPin" />
+            <Pin Id="T6y5E9HJcT4OQdike0DRyd" Name="Enabled" Kind="InputPin" />
+          </Node>
+          <Node Bounds="80,99,235,19" Id="RxGZUK3w86hPlmNyLKs73f">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Nuitrack" />
+            </p:NodeReference>
+            <Pin Id="C1xEY0o2BgzOxXqZuKdtxW" Name="Runtime" Kind="OutputPin" />
+            <Pin Id="J4GoITof020Ne2Lr8Pn43C" Name="Initialized" Kind="OutputPin" />
+            <Pin Id="NTrWh5iIWtHNA3eeiDrAxP" Name="Status" Kind="OutputPin" />
+            <Pin Id="TeAUQGku1mxOJ5EUC6mBYV" Name="SensorCreated" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LOztQp9Fj8lMj1I3MICceK" Comment="Initialized" Bounds="159,160,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SEctcbEbCG9QDzJn11LCKi" Comment="Status" Bounds="271,160,53,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QK355Zy4cLzNsOJh37V20L" Comment="SensorCreated" Bounds="381,160,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="80,229,35,19" Id="OkhCYs9xA73P8ehB2a5LBA">
+            <p:NodeReference LastCategoryFullName="Devices.Kinect2" LastSymbolSource="VL.Devices.NuiTrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RGB (Reactive)" />
+            </p:NodeReference>
+            <Pin Id="L2aJQlCeln2MzMGTn9ftJb" Name="Nuitrack Runtime" Kind="InputPin" />
+            <Pin Id="HtF31Ix5X9WPn1T1kv0RFU" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="80,275,88,19" Id="GkTNsRN0LvmQQHSpYl1TLA">
+            <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Graphics" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="Ess2Hpalwm3M4iqL4n62F4" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="NI8XcQ7KjcSMazn96Z4X8K" Name="Timeout" Kind="InputPin" />
+            <Pin Id="VeN9d94HLbnM3KgGv9ajKN" Name="Reset" Kind="InputPin" />
+            <Pin Id="G93Qi91LeMJNc4b25bxIGT" Name="Result" Kind="OutputPin" />
+            <Pin Id="TuzFhlwK4GrQQuJtAgZKPj" Name="Swap Count" Kind="OutputPin" />
+            <Pin Id="BvBJG2xcf3MMdCbePK29j5" Name="Drop Count" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="PezHqATNMeFLTtksi4UNfQ" Name="Create" />
+        <Patch Id="CDQZ9HZLn4IOcjLct4UiIb" Name="Update" />
+        <ProcessDefinition Id="JlBaJV56q6tNbllbtucKrF">
+          <Fragment Id="Veya6qzFajYNtbX4R0DbJC" Patch="PezHqATNMeFLTtksi4UNfQ" Enabled="true" />
+          <Fragment Id="FU499SennveMurBEPvVkpK" Patch="CDQZ9HZLn4IOcjLct4UiIb" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="AkUv03Mo9VcQXz1ZESkpGW" Ids="DTntQNMoSGsQRZjkqxFLP8,TIq68FJ3tiaOy0jc9hhLxV" />
+        <Link Id="Fjx9cng1ZURP3ZkjTUfuV1" Ids="C1xEY0o2BgzOxXqZuKdtxW,L2aJQlCeln2MzMGTn9ftJb" />
+        <Link Id="HFKcGWAaUxiN8XVVwgx2iv" Ids="J4GoITof020Ne2Lr8Pn43C,LOztQp9Fj8lMj1I3MICceK" />
+        <Link Id="T6CaQobggdROpfpnmJbP3Z" Ids="NTrWh5iIWtHNA3eeiDrAxP,SEctcbEbCG9QDzJn11LCKi" />
+        <Link Id="NXehztwNQT7O5WEbfFvoiS" Ids="TeAUQGku1mxOJ5EUC6mBYV,QK355Zy4cLzNsOJh37V20L" />
+        <Link Id="NDnydpLdId3P1TansIGCgA" Ids="HtF31Ix5X9WPn1T1kv0RFU,Ess2Hpalwm3M4iqL4n62F4" />
+        <Link Id="Ce77ZqJxEbtMAzEMk6KYnh" Ids="G93Qi91LeMJNc4b25bxIGT,Sk8uCcaIM4sPZohDRPg77u" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="KlH9Yu05DMgQaMxNBLd7ih" Location="VL.Skia" Version="2019.1.0-0420-gd786f06fc5" />
+  <DocumentDependency Id="FquE01ATPFJL0adVvr4Tf9" Location="../../../VL.Devices.NuiTrack.vl" />
+  <NugetDependency Id="OeEHn4Wb1XaPM9G7MS1GFX" Location="VL.OpenCV" Version="0.2.102-alpha" />
+</Document>
