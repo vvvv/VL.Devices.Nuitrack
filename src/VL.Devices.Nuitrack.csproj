@@ -54,6 +54,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DepthFrameEventArgs.cs" />
+    <Compile Include="UserFrameEventArgs.cs" />
     <Compile Include="ColorFrameEventArgs.cs" />
     <Compile Include="FrameExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
