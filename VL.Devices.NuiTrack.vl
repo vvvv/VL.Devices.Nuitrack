@@ -8,7 +8,7 @@
     ************************ RGB (Reactive) ************************
 
 -->
-      <Node Name="RGB (Reactive)" Bounds="511,577" Id="CG6LVbkg6wiQYJHAP2azGD">
+      <Node Name="RGB (Reactive)" Bounds="695,580" Id="CG6LVbkg6wiQYJHAP2azGD">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -46,7 +46,7 @@
     ************************ NuitrackRuntime ************************
 
 -->
-      <Node Name="NuitrackRuntime" Bounds="508,360" Id="LcVzMf1Hkg9MqGULAmghYy">
+      <Node Name="NuitrackRuntime" Bounds="510,442" Id="LcVzMf1Hkg9MqGULAmghYy">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -503,7 +503,7 @@
     ************************ Nuitrack ************************
 
 -->
-      <Node Name="Nuitrack" Bounds="513,475" Id="LjlpMo051zcMhhX5OqEZfo">
+      <Node Name="Nuitrack" Bounds="510,511" Id="LjlpMo051zcMhhX5OqEZfo">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -581,7 +581,7 @@
           <Link Id="NPhT8Z9bFUILokmSECA4mG" Ids="QAuKEPgBLQmPvgUvYL8kek,NP3F2US4MZjPgPi468Bj1u" IsHidden="true" />
         </Patch>
       </Node>
-      <Canvas Id="SU0RLJl3a2TP488puPQtMW" Name="Internal" Position="709,363">
+      <Canvas Id="SU0RLJl3a2TP488puPQtMW" Name="Internal" Position="510,343">
         <!--
 
     ************************ Nuitrack ************************
@@ -1011,7 +1011,7 @@
     ************************ Depth (Reactive) ************************
 
 -->
-      <Node Name="Depth (Reactive)" Bounds="693,584" Id="I5peSaoOTXeLUa4UYo8Fdq">
+      <Node Name="Depth (Reactive)" Bounds="695,649" Id="I5peSaoOTXeLUa4UYo8Fdq">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1042,6 +1042,111 @@
           <Link Id="CTZeSdP8A7LOrvmg3EvCBq" Ids="NVGkwcs7XjIN2mrNfbwm7i,IHFe7AU0w6VQL8Y57UWN8L" IsHidden="true" />
           <Link Id="LDB5OzhlVvRPIIC5uJkUuR" Ids="IHFe7AU0w6VQL8Y57UWN8L,F8qp0fwsCtbLF46rRbuR2G" />
           <Link Id="BUd1bCUx30hOUK1LHwxUr3" Ids="EGrU72WXX2xP7z7meFDVp8,VmwsIIwRhqnNrwqk8vkAws" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ RGB ************************
+
+-->
+      <Node Name="RGB" Bounds="510,580" Id="IoHXzKhi83AL20Fxv1mX9J">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="CScFHA0yMhnLcEGSXAWQmn">
+          <Canvas Id="InSvgLgtYZcMVsO3qiS80W" CanvasType="Group">
+            <Node Bounds="456,372,35,19" Id="LVybHiVaV3jPDOiVSvMOMz">
+              <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="RGB (Reactive)" />
+              </p:NodeReference>
+              <Pin Id="UNmms32wRpROtk5CR7jpud" Name="Nuitrack Runtime" Kind="InputPin" />
+              <Pin Id="MKMx6xgfAJ0LKzk0Ukgub8" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="PGCiqQttlkPLRD7FvxU6Dh" Bounds="458,327" />
+            <ControlPoint Id="QYA2AmNQwQTP6mhnSmFXwQ" Bounds="458,504" />
+            <Node Bounds="456,419,88,19" Id="TNC7ZPOPGxKORAWtja0lUz">
+              <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
+              </p:NodeReference>
+              <Pin Id="GgaS79QrhlKMx3NTbeT3oj" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="FPXrq9t2h69QKjMzMqylqf" Name="Timeout" Kind="InputPin" />
+              <Pin Id="O6S0pY5WXT4NKjmIq5hKU7" Name="Reset" Kind="InputPin" />
+              <Pin Id="L6i6btYYE7GOaLgr4ERmaP" Name="Result" Kind="OutputPin" />
+              <Pin Id="MzceNv5Gy0tNA0aCyanzNV" Name="Swap Count" Kind="OutputPin" />
+              <Pin Id="DBmsnmtYAJEN000HHX68Cg" Name="Drop Count" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="DqZ1tZWwSWvMyLcVqSh9hQ" Name="Create" />
+          <Patch Id="Fv3kgVfXqc5QB30jBnGpV4" Name="Update">
+            <Pin Id="AhibDqUhjOeQTFlh2cDXJI" Name="Nuitrack Runtime" Kind="InputPin" />
+            <Pin Id="CwKlhaFuvNLLxctVmGJ6jR" Name="Output" Kind="OutputPin" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="N5jgufpyd6iOGGFYzVNfRp">
+            <Fragment Id="DN8AIAPCZhEL7YvDwy7I7u" Patch="DqZ1tZWwSWvMyLcVqSh9hQ" Enabled="true" />
+            <Fragment Id="VOwCmGDDms3QTPyXop8esn" Patch="Fv3kgVfXqc5QB30jBnGpV4" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="E9ALVQdm9xSOPR7KUR4O5m" Ids="AhibDqUhjOeQTFlh2cDXJI,PGCiqQttlkPLRD7FvxU6Dh" IsHidden="true" />
+          <Link Id="MmuGGjkAWjXMEr5DYJoyno" Ids="PGCiqQttlkPLRD7FvxU6Dh,UNmms32wRpROtk5CR7jpud" />
+          <Link Id="El96pSvQqVXL2jwHYT25rw" Ids="QYA2AmNQwQTP6mhnSmFXwQ,CwKlhaFuvNLLxctVmGJ6jR" IsHidden="true" />
+          <Link Id="NGikNdn52EpOGLf3CngpPV" Ids="MKMx6xgfAJ0LKzk0Ukgub8,GgaS79QrhlKMx3NTbeT3oj" />
+          <Link Id="TCaruCkIAKWLlbmOUMgV2p" Ids="L6i6btYYE7GOaLgr4ERmaP,QYA2AmNQwQTP6mhnSmFXwQ" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Depth ************************
+
+-->
+      <Node Name="Depth" Bounds="510,649" Id="R6tBvucP3K3MuNVhs0KFwJ">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="LvmCsEpkKRNLgizsp9BmQ9">
+          <Canvas Id="R5E91wbbrdCNZjJmneylqv" CanvasType="Group">
+            <Node Bounds="456,372,35,19" Id="G0tYG2DjfUgNOsPL0znWM6">
+              <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Depth (Reactive)" />
+              </p:NodeReference>
+              <Pin Id="ANNjNF3r160PgXlBuLmOSl" Name="Nuitrack Runtime" Kind="InputPin" />
+              <Pin Id="VGaorIpJXYTPKFR8uZnvg8" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="TVCICXSnL4JPcxiDuvYaM3" Bounds="458,327" />
+            <ControlPoint Id="PRdJpEHAdRJNc1nuHE7lML" Bounds="458,504" />
+            <Node Bounds="456,419,88,19" Id="B86YevAutBmP7yxgJdJqyA">
+              <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
+              </p:NodeReference>
+              <Pin Id="Fl2My2K0LvBOLKBOj64jpN" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="U0APEQqmbYUOekg6D2LDih" Name="Timeout" Kind="InputPin" />
+              <Pin Id="MbrBz3BbkRJNOswv71MGDu" Name="Reset" Kind="InputPin" />
+              <Pin Id="VNeYHSm6ujIMdNRIxiE5d7" Name="Result" Kind="OutputPin" />
+              <Pin Id="UWASBsRfP2cOaYgPnWmjFp" Name="Swap Count" Kind="OutputPin" />
+              <Pin Id="L6wlEI7Ku4lLCaryDGrLtq" Name="Drop Count" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="TjuPudFQ8pyNRaBXL6xre9" Name="Create" />
+          <Patch Id="VpzfMUspgiQMsUGA2IxDqa" Name="Update">
+            <Pin Id="QJU0QpZKEQ3NRF5xxunXsn" Name="Nuitrack Runtime" Kind="InputPin" />
+            <Pin Id="NKqvOmRu04IP6asb4xHzVf" Name="Output" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="E6JKy8cXBiBMRvDrJcgC5v">
+            <Fragment Id="FVYLYc3ckI0OGOfiEIC5Sc" Patch="TjuPudFQ8pyNRaBXL6xre9" Enabled="true" />
+            <Fragment Id="SWoaflttmlqOWf5A2I28g3" Patch="VpzfMUspgiQMsUGA2IxDqa" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="AcGGJkho8gDMCbyOJVunPM" Ids="QJU0QpZKEQ3NRF5xxunXsn,TVCICXSnL4JPcxiDuvYaM3" IsHidden="true" />
+          <Link Id="Ak4hHgFBETbLhgTUKsLXXT" Ids="TVCICXSnL4JPcxiDuvYaM3,ANNjNF3r160PgXlBuLmOSl" />
+          <Link Id="NT34IVImstBQFBTpFljBQ2" Ids="PRdJpEHAdRJNc1nuHE7lML,NKqvOmRu04IP6asb4xHzVf" IsHidden="true" />
+          <Link Id="ObVKPdKRKo6Qb2QL0ebx5P" Ids="VGaorIpJXYTPKFR8uZnvg8,Fl2My2K0LvBOLKBOj64jpN" />
+          <Link Id="Alj6nvZfSSkMubbJbsBi8b" Ids="VNeYHSm6ujIMdNRIxiE5d7,PRdJpEHAdRJNc1nuHE7lML" />
         </Patch>
       </Node>
     </Canvas>
