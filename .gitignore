@@ -1,4 +1,7 @@
-/lib/
+*.dll
+*.dll.config
+*.pdb
+!/lib/net461/nuitrack.net.dll
 /src/.vs/
 /src/obj/
 /src/packages/
