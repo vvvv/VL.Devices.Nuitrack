@@ -72,7 +72,7 @@ namespace VL.Devices.Nuitrack
         public static IImage ToUserImage(UserFrame frame)
         {
 
-            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R8);
+            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R16);
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }
