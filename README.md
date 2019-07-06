@@ -33,11 +33,11 @@ After the steps above have been done you will need to activate your Nuitrack ins
 - Head to "C:\Nuitrack\nuitrack\nuitrack\activation_tool" 
 - Run "Nuitrack.exe".
 - Click on Test, after a short while you should see a window with input from your device, click to toggle between color and depth view
-- Back on the main application window click on Add License and paste in the code you got during your registration (if you do not have registered but do not have a key at hand follow the steps in the section below)
+- Back on the main application window click on Add License and paste in the code you got during your registration (if you have registered but do not have a key at hand follow the steps in the section below)
 
 ### Getting an activation key
 
-If you have registered on nuitrack.com but for any reason do not have a key at hand, you can head to (https://cognitive.3divi.com/app/nuitrack/dashboard/) and at the bottom click on "Generate a key", the provided key should allow you to activate your copy of Nuitrack SDK.
+If you have registered on nuitrack.com but for any reason do not have a key at hand, you can head to (https://cognitive.3divi.com/app/nuitrack/dashboard/) and at the bottom click on "Generate a key". The provided key should allow you to activate your copy of Nuitrack SDK.
 
 ### Using Nuitrack in VL
 
