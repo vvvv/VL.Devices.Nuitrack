@@ -53,6 +53,21 @@ namespace VL.Devices.Nuitrack
                     cfaHandler => userTracker.OnUpdateEvent -= cfaHandler);
         }
 
+        public static IObservable<SkeletonDataEventArgs> SkeletonDataArrived(SkeletonTracker skeletonTracker)
+        {
+            return Observable.FromEvent<SkeletonTracker.OnSkeletonUpdate, SkeletonDataEventArgs>(handler =>
+            {
+                SkeletonTracker.OnSkeletonUpdate cfaHandler = (x) =>
+                {
+                    handler(new SkeletonDataEventArgs(x));
+                };
+
+                return cfaHandler;
+            },
+                    cfaHandler => skeletonTracker.OnSkeletonUpdateEvent += cfaHandler,
+                    cfaHandler => skeletonTracker.OnSkeletonUpdateEvent -= cfaHandler);
+        }
+
         public static IImage ToColorImage(ColorFrame frame)
         {
 
@@ -76,5 +91,7 @@ namespace VL.Devices.Nuitrack
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }
+
+
     }
 }

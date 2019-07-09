@@ -7,8 +7,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\vvvv\vvvv_50alpha38.2_x64\vvvv.exe</StartProgram>
-    <StartArguments>
-    </StartArguments>
+    <StartProgram>C:\vvvv\vvvv_gamma_2019.1.0-0425-gef454d89b2\vvvv.exe</StartProgram>
+    <StartArguments>--package-repositories C:\libs.VL</StartArguments>
   </PropertyGroup>
 </Project>

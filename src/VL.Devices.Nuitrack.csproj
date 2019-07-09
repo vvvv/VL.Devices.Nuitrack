@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DepthFrameEventArgs.cs" />
+    <Compile Include="SkeletonDataEventArgs.cs" />
     <Compile Include="UserFrameEventArgs.cs" />
     <Compile Include="ColorFrameEventArgs.cs" />
     <Compile Include="FrameExtensions.cs" />
