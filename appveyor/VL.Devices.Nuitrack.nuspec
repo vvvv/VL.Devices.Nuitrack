@@ -11,7 +11,7 @@
     <summary>A VL wrapper for the Nuitrack API</summary>
     <description>Nuitrack for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, Nuitrack</tags>
+    <tags>VL, Nuitrack, skeleton, camera, video, depth</tags>
     <dependencies>
       <dependency id="" version="[]" />
     </dependencies>
