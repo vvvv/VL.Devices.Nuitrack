@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
+<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
   <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.1.0-420" />
   <Patch Id="SOGuJg2kg20OOIaKiNqoH0">
     <Canvas Id="OLpATbPPMmSLOYa0wesFn0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -345,7 +345,11 @@
             <Pin Id="VFjn5L8Tyc3MErn58nTC5k" Name="Alpha" Kind="InputPin" />
             <Pin Id="Gx4jc7Kpnh4QKeP8EGPb94" Name="Beta" Kind="InputPin" />
             <Pin Id="AT8jt4YXZWOLu8nUGxgA7q" Name="Norm Type" Kind="InputPin" />
-            <Pin Id="OU3jj5XTUAANXBse3GSiZ7" Name="Dtype" Kind="InputPin" />
+            <Pin Id="TitPcCRy1sNLYqVB5EXTgh" Name="Destination Type" Kind="InputPin" DefaultValue="CV_8UC1">
+              <p:TypeAnnotation LastCategoryFullName="OpenCV.Utils" LastSymbolSource="VL.OpenCV.vl">
+                <Choice Kind="TypeFlag" Name="MatType" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="JFpuaPKNBesP2ZpWLNyNfX" Name="Apply" Kind="InputPin" />
             <Pin Id="U0nQ9sfT1N0M6Ynfpau5CL" Name="Output" Kind="OutputPin" />
           </Node>
