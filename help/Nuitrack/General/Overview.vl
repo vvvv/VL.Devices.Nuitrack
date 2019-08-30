@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0425-gef454d89b2" Version="0.128">
+<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0624-g5df7a10830" Version="0.128">
   <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.1.0-420" />
   <Patch Id="SOGuJg2kg20OOIaKiNqoH0">
     <Canvas Id="OLpATbPPMmSLOYa0wesFn0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -15,38 +15,6 @@
       </p:NodeReference>
       <Patch Id="BtGGrtvxpAZP3Rk8sJhEQI">
         <Canvas Id="F0wvvQ90LXTPrS2tcgIZAV" CanvasType="Group">
-          <Node Bounds="80,341,67,19" Id="Qn8Hfgt7cr9MU7LT65IbFn">
-            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FromImage" />
-              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
-              </CategoryReference>
-            </p:NodeReference>
-            <Pin Id="Sk8uCcaIM4sPZohDRPg77u" Name="Input" Kind="InputPin" />
-            <Pin Id="DTntQNMoSGsQRZjkqxFLP8" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="60,434,105,19" Id="OKdYJ7pi6EKNkQYXX1DAQU">
-            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Renderer" />
-              <CategoryReference Kind="Category" Name="Sink" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="EKf78vuWJuqOSL19RJYUYW" Name="Bounds" Kind="InputPin" DefaultValue="1013, 54, 436, 275">
-              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-                <Choice Kind="TypeFlag" Name="Rectangle" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="TIq68FJ3tiaOy0jc9hhLxV" Name="Input" Kind="InputPin" />
-            <Pin Id="B7M5HJep8KzLsCyKVVh6Q6" Name="Title" Kind="InputPin" DefaultValue="Nuitrack RGB">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="I02fJqyXSEkNBrDyYw832K" Name="Renderer Mode" Kind="InputPin" />
-            <Pin Id="KKWMCGwAnpDLwJrOOh7PpD" Name="Show Info" Kind="InputPin" />
-            <Pin Id="T6y5E9HJcT4OQdike0DRyd" Name="Enabled" Kind="InputPin" />
-          </Node>
           <Node Bounds="80,119,480,19" Id="RxGZUK3w86hPlmNyLKs73f">
             <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -106,36 +74,36 @@
             <Pin Id="J0pfrwtdIQeLzEUBAfrNWZ" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="285,341,67,19" Id="D06LM6jZ2DPMx78IMaCWB3">
-            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FromImage" />
-              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="J4GZswpixnNPAqrQtcyT9u" Name="Input" Kind="InputPin" />
-            <Pin Id="TnwCt61R1CxMjK7W8PwDcS" Name="Output" Kind="OutputPin" />
+            <Pin Id="CrPNPHu270vOetZwqtrlJs" Name="Discard Higher Bits" Kind="InputPin" />
+            <Pin Id="OHLVRjPIlbcOtzfua7DmlG" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="265,434,105,19" Id="J3J9meoleiBL5fjdR2pT3c">
-            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
+          <Node Bounds="261,494,125,19" Id="J3J9meoleiBL5fjdR2pT3c">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
-              <CategoryReference Kind="Category" Name="Sink" NeedsToBeDirectParent="true" />
+              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <Pin Id="OKr4bb05NBDLt6HJ3BtL46" Name="Bounds" Kind="InputPin" DefaultValue="1012, 322, 436, 354">
+            <Pin Id="OKr4bb05NBDLt6HJ3BtL46" Name="Bounds" Kind="InputPin" DefaultValue="1147, 382, 600, 352">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="P3CWUa3apNbQABDhvFlb9f" Name="Input" Kind="InputPin" />
-            <Pin Id="QTx3MDUBHgMOU5dot1rTGL" Name="Title" Kind="InputPin" DefaultValue="Nuitrack Depth">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="SWTOzq8SzDZM1tD4EIEIhk" Name="Renderer Mode" Kind="InputPin" />
-            <Pin Id="Dkq0zTUw5RtOgerhwS3IdW" Name="Show Info" Kind="InputPin" />
+            <Pin Id="NoQGnvsQ8l6PdSKTsdQNKV" Name="Color" Kind="InputPin" />
+            <Pin Id="KbtP2qlLaAuLgEVKcy0FeR" Name="Clear" Kind="InputPin" />
+            <Pin Id="Dkoq896YJ9XLD66u4RkVNv" Name="Space" Kind="InputPin" />
             <Pin Id="Pm8YkKrQ5ScOPoseZ77LsM" Name="Enabled" Kind="InputPin" />
+            <Pin Id="OFEoYcGR797M3Md0M9hB9v" Name="Form" Kind="OutputPin" />
+            <Pin Id="UjnfeOUQq8fL0kFu4lkgDR" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="BP6YdVwYRErOBGAj4u0aTA" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="285,295,88,19" Id="H0WozyMdEL2NXq7HNyug19">
             <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
@@ -151,20 +119,6 @@
             <Pin Id="UfK2T0DzmorPFzpcBPI8n7" Name="Result" Kind="OutputPin" />
             <Pin Id="Ga5dZ7LoitONdliS9xUzdF" Name="Swap Count" Kind="OutputPin" />
             <Pin Id="NDayc4HpmraPv2pDHhq1VH" Name="Drop Count" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="285,388,105,19" Id="IEkeUq9vgjzMKGiyGaHcYJ">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Normalize" />
-              <FullNameCategoryReference ID="OpenCV.Filter" />
-            </p:NodeReference>
-            <Pin Id="N1x72wbSDVIOrsCmxIMjbh" Name="Input" Kind="InputPin" />
-            <Pin Id="Qlstltbg8jILbc4agDwKng" Name="Alpha" Kind="InputPin" />
-            <Pin Id="C9oSGrTiN9GLTbJcogOGkA" Name="Beta" Kind="InputPin" />
-            <Pin Id="RW8Np81oca8PdH9nTaBeRx" Name="Norm Type" Kind="InputPin" />
-            <Pin Id="TnKaCcc6GRpLZcRN2suGBP" Name="Dtype" Kind="InputPin" />
-            <Pin Id="LzjbzQ9HZhJNA7AX22Gjy4" Name="Apply" Kind="InputPin" />
-            <Pin Id="M75mIFGc14FNv9guDn8OBp" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="490,243,65,19" Id="MN8t7XBdmqDMlPvGXZ7b0T">
             <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
@@ -182,7 +136,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="490,291,88,19" Id="LrekZ90OFwpM6oepTE7maA">
+          <Node Bounds="510,303,88,19" Id="LrekZ90OFwpM6oepTE7maA">
             <p:NodeReference LastCategoryFullName="Graphics.Imaging" LastSymbolSource="VL.Imaging.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatestCopy" />
@@ -197,78 +151,7 @@
             <Pin Id="RQNcwayTUHANLULqenip00" Name="Swap Count" Kind="OutputPin" />
             <Pin Id="P4itYE1iCIXQKevvvW27Dg" Name="Drop Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="490,338,67,19" Id="Ug8WedWf8pfNOnJx4Dj0Dy">
-            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FromImage" />
-              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
-              </CategoryReference>
-            </p:NodeReference>
-            <Pin Id="HkLJtiUH4tAOsz9J48LOWr" Name="Input" Kind="InputPin" />
-            <Pin Id="NMz8AUQJ6AnNAg9RBDW74d" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="469,591,105,19" Id="NOR8xYcOolkNjXjNzNkPIN">
-            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="OpenCV" />
-              <CategoryReference Kind="Category" Name="Sink" />
-              <Choice Kind="ProcessAppFlag" Name="Renderer" />
-            </p:NodeReference>
-            <Pin Id="D1rr5SKkDd1O8l7Um3hMq9" Name="Bounds" Kind="InputPin" DefaultValue="1012, 665, 435, 353">
-              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
-                <Choice Kind="TypeFlag" Name="Rectangle" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="LItvQITX23nNms47lPbUFC" Name="Input" Kind="InputPin" />
-            <Pin Id="G6v4jXHLMM1OXnWoWrniuu" Name="Title" Kind="InputPin" DefaultValue="Nuitrack User">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="NJuFNbNwaqHNcJNYjV57nT" Name="Renderer Mode" Kind="InputPin" />
-            <Pin Id="K7vTVtga2RJMni1UUZ87Hf" Name="Show Info" Kind="InputPin" />
-            <Pin Id="PwiC5pYoDw4Mts8fBq1W1B" Name="Enabled" Kind="InputPin" />
-          </Node>
-          <Node Bounds="489,513,45,19" Id="O5vodvcpi9nNQt5a1W1wLm">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="LUT" />
-            </p:NodeReference>
-            <Pin Id="TsTPk00e5EhOOnUVlcbFWa" Name="Input" Kind="InputPin" />
-            <Pin Id="Fe4RDceLlm8O8nzHq2arF1" Name="Colors" Kind="InputPin" />
-            <Pin Id="QXxejJ5Pp5aM42qFkSesA3" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="SkinBbza0PYNdgnlM0O7wM" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="489,449,85,19" Id="DeupnYuHwGuPNgL2A1TO6M">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ConvertColor" />
-            </p:NodeReference>
-            <Pin Id="JuKYCJFefteLh5eghxr5Gx" Name="Input" Kind="InputPin" />
-            <Pin Id="V39FU8v43JVNWbX04ClB3D" Name="Source Format" Kind="InputPin" DefaultValue="GRAY">
-              <p:TypeAnnotation LastCategoryFullName="VL.OpenCV" LastSymbolSource="VL.OpenCV.dll">
-                <Choice Kind="TypeFlag" Name="ColorConversionSourceCodes" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="OsjaoulQvOWQWJE8vr06DM" Name="Target Format" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="VL.OpenCV" LastSymbolSource="VL.OpenCV.dll">
-                <Choice Kind="TypeFlag" Name="ColorConversionTargetCodes" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="CGsObWmA2xqM2MP5CWII1Y" Name="Destination Channels" Kind="InputPin" />
-            <Pin Id="MwPkN2OPWQoMffWHPvUtGz" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="HZ4qTccyVW0Owi5QTnw04t" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="BCr6SCdDLRKLhXw3dshtno" Comment="Player Colors" Bounds="591,339,20,136" ShowValueBox="true" isIOBox="true">
+          <Pad Id="BCr6SCdDLRKLhXw3dshtno" Comment="Player Colors" Bounds="645,395,20,136" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -282,6 +165,7 @@
               <p:showvalue p:Type="Boolean">false</p:showvalue>
             </p:ValueBoxSettings>
             <p:Value>
+              <Item>0, 0, 0, 1</Item>
               <Item>0.1399999, 0, 1, 1</Item>
               <Item>0.8299998, 0, 0.2490017, 1</Item>
               <Item>0.97, 0.8730023, 0, 1</Item>
@@ -290,24 +174,6 @@
               <Item>0.415398, 0, 0.67, 1</Item>
             </p:Value>
           </Pad>
-          <Node Bounds="490,393,105,19" Id="UuxvBbdPbuFOflexb51CWe">
-            <p:NodeReference LastCategoryFullName="OpenCV.Filter" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Normalize" />
-              <FullNameCategoryReference ID="OpenCV.Filter" />
-            </p:NodeReference>
-            <Pin Id="HR2tuIw1G5MNHtc6TY27Jl" Name="Input" Kind="InputPin" />
-            <Pin Id="GuU7luJ4zXULd65HhxvhhP" Name="Alpha" Kind="InputPin" />
-            <Pin Id="QS12mkxhLMuNAFucKuDcl1" Name="Beta" Kind="InputPin" />
-            <Pin Id="EoQp0jGCl2yNtcyrKDK0fP" Name="Norm Type" Kind="InputPin" />
-            <Pin Id="PFQcGjGjSXCMEsXUsEirPg" Name="Dtype" Kind="InputPin" />
-            <Pin Id="F5YfnPb38MWP4EUsPug15d" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="DNoPxijOcXALV4Gjs8Qpv0" Name="Output" Kind="OutputPin" />
-          </Node>
           <Pad Id="NXevt5NmuJhNrGJIJPSwP4" Comment="Floor" Bounds="890,337,63,58" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TLcLEMpoo7UNrodoj3lfdG" Comment="Floor Normal" Bounds="1003,337,63,58" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="802,421,44,19" Id="C9WUUGy3WiRNe5pkRTLGLp">
@@ -353,15 +219,6 @@
           <Pad Id="LLGj8l5ekA3PDvXYJulCcd" Comment="Occlusion" Bounds="937,637,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="SDdW0nbpeaCPVjyXSqVgQj" Comment="Proj" Bounds="957,581,41,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QVysPXCB8FlLbmEBLgmWiQ" Comment="Real" Bounds="977,518,41,43" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SJ2iKS9wIr1LbzfLIBiTFr" Bounds="413,625,276,36" ShowValueBox="true" isIOBox="true" Value="TODO: check Image contents and format, something is broken">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="LPMdZSWxTfbLtoXQWDNw5N" Bounds="959,293,73,19" ShowValueBox="true" isIOBox="true" Value="User Data">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -380,6 +237,186 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="285,444,125,19" Id="VxTwcBY0pUKLrZvqZbNdUf">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="AWIZMIfxRIqPUcD3xYMLD1" Name="Image" Kind="InputPin" />
+            <Pin Id="Gnt5RmNSR40M7WK1RjqNUC" Name="Position" Kind="InputPin" />
+            <Pin Id="Bc2ryYY4ZdWK9gyjU3AVbT" Name="Size" Kind="InputPin" DefaultValue="1, 2">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JkvUzdbRFQRPleCGYKVufB" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="OiUmiQMhNDiO6vquv9YtqO" Name="Anchor" Kind="InputPin" />
+            <Pin Id="ROs1HycWJldN5GOjxBHHpo" Name="Paint" Kind="InputPin" />
+            <Pin Id="KVpu6bapF81MtxrF8gzsqm" Name="Enabled" Kind="InputPin" />
+            <Pin Id="CLy0wOiKXs2PA3gmDQnMWH" Name="Output" Kind="OutputPin" />
+            <Pin Id="ComD8rnWctMLI5hru0P2z7" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="489,339,67,26" Id="Nwxmqu01p2xNjLksLpnOml">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="Av42IWa0zNWOslg9r1nTed" Name="Input" Kind="InputPin" />
+            <Pin Id="NnaHIZaGkYePDyAMVo3vIe" Name="Discard Higher Bits" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UgqCIHuFLiCPOla3wtByAW" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="465,528,125,19" Id="EQQMUOs1WnmPpZbFsCSXHb">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="TXOFBuKxEAaMhQjaxVU1vy" Name="Bounds" Kind="InputPin" DefaultValue="1148, 726, 600, 366">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Hc6QEwPEFimQJbtnYyYLW6" Name="Input" Kind="InputPin" />
+            <Pin Id="MXHUsCBZHddMnyrnAfVbml" Name="Color" Kind="InputPin" />
+            <Pin Id="HuUgIPhkMpZPrMI9VWM9xG" Name="Clear" Kind="InputPin" />
+            <Pin Id="Ens0apaxgaCMaoLzYTdu3c" Name="Space" Kind="InputPin" />
+            <Pin Id="IRQWJQxVGWwQTzw8VW14Oc" Name="Enabled" Kind="InputPin" />
+            <Pin Id="J593qhN9mxLPsnQCaPX7Ci" Name="Form" Kind="OutputPin" />
+            <Pin Id="Je5ivBjtMTZOhTO0wkQyjq" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="O2DMHEq6rSpQcc1b3zzKdy" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="489,478,125,19" Id="RI5f37Mm1ADOJcgE9VzQz9">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="J3KP6CKoXLlMq7Tu2RJ5Qw" Name="Image" Kind="InputPin" />
+            <Pin Id="E9pr9m2b0UcLtEHzGYpEnX" Name="Position" Kind="InputPin" />
+            <Pin Id="CnIytGEk2cDOeOmOkQJwaJ" Name="Size" Kind="InputPin" DefaultValue="1, 2">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="IOOTVtbHVJ0OUSghw8Sfbz" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="CvkS8ZEKYQ6QS8b3rpT3w2" Name="Anchor" Kind="InputPin" />
+            <Pin Id="FBW5bGIpDrTL2D5JENWmmP" Name="Paint" Kind="InputPin" />
+            <Pin Id="N8LqfjlX8eiLTI6DOSy8f2" Name="Enabled" Kind="InputPin" />
+            <Pin Id="RzVd2o11COwLCkmDfaiJjy" Name="Output" Kind="OutputPin" />
+            <Pin Id="NutNqt8kmn5NCIubPoEt3O" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="592,408,34,19" Id="Hh9bHfS8SvFNcoDfWRL97E">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint.ColorFilters" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LUT" />
+              <CategoryReference Kind="Category" Name="ColorFilters" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="HVe3WAQ4irQLdjeH5M0SUZ" Name="Colors" Kind="InputPin" />
+            <Pin Id="Q1MgIIy67lXLJtV4Ovh2FE" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="549,439,78,19" Id="V2xt1cRVsICNJEYnmeJoqH">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetColorFilter" />
+            </p:NodeReference>
+            <Pin Id="M7ZYj090MCyOZR9OzHig2e" Name="Input" Kind="InputPin" />
+            <Pin Id="Njc9EVipCGON5rpQjMdrfD" Name="Filter" Kind="InputPin" />
+            <Pin Id="HGVF9C228RJNX5QpZvdGtS" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="62,487,125,19" Id="NZvRDKN7wjXO16ig8nsLhD">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="OgxHUxRXayFMLnZ26gFXdw" Name="Bounds" Kind="InputPin" DefaultValue="1147, 50, 600, 339">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="RTYXgWOWPEdOOlHAwSHj8V" Name="Input" Kind="InputPin" />
+            <Pin Id="UiAS1wdycy6ObZ1GFmH4JP" Name="Color" Kind="InputPin" />
+            <Pin Id="TQcU09vtssNNT9Gh4YgF7O" Name="Clear" Kind="InputPin" />
+            <Pin Id="TaQe96P74ulOBHGwUNunIz" Name="Space" Kind="InputPin" />
+            <Pin Id="Krxd4529vwVM6S5ndcEj30" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MaENSt9MSVbOHjjkgjhGgy" Name="Form" Kind="OutputPin" />
+            <Pin Id="U8nG1r5nHUjPA4xhpFDqle" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="IlrYV0SU46ZMYpbofGpYmo" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="86,437,125,19" Id="UCgcHudLI0aOD21qgWR35D">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="Gae98df2nnZODog4m9g1Ai" Name="Image" Kind="InputPin" />
+            <Pin Id="N6qCNcgqLG3Nn3iAZ6Fgpr" Name="Position" Kind="InputPin" />
+            <Pin Id="QWCpzSfmUZtQY6Ty26kDDn" Name="Size" Kind="InputPin" DefaultValue="1, 2">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PVF3jcUYRb0MoEADb9tCr1" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="EcSLc6pZjn8PiCL3xdX1xB" Name="Anchor" Kind="InputPin" />
+            <Pin Id="JEQ4vdDfAgqQApWc9fLh7B" Name="Paint" Kind="InputPin" />
+            <Pin Id="O40yJSCEZs0P16D1MRblYs" Name="Enabled" Kind="InputPin" />
+            <Pin Id="LM7dyzByBpxNGu1emC32KT" Name="Output" Kind="OutputPin" />
+            <Pin Id="C19rsBhQ37qOXlgOzHcT9t" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="366,406,78,19" Id="F28kkMfyB3LQY7cbNrdnN0">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SetColorFilter" />
+            </p:NodeReference>
+            <Pin Id="T8A4ofHtwBaNGKiZDixlCh" Name="Input" Kind="InputPin" />
+            <Pin Id="EzujTv8UytgODuCwsLsYlu" Name="Filter" Kind="InputPin" />
+            <Pin Id="RjTaaE7IjRrQcN11FOwUM0" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="378,375,64,19" Id="A0hd674to9sPdLbU2lt2XF">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint.ColorFilters" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Brightness" />
+            </p:NodeReference>
+            <Pin Id="QnRnPYX8WVFNwikrHVb8wf" Name="Input" Kind="InputPin" DefaultValue="5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DLal5RHBPABM38LMYMfZel" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="80,346,67,19" Id="HNM0GKToCEVOemwT5SifVd">
+            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FromImage" />
+              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="TLYXf6qNkWpLD8FkZDfqeW" Name="Input" Kind="InputPin" />
+            <Pin Id="PcAb6HgfzN1LOmuWyZ8iuM" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="60,387,105,19" Id="CtfBzO4PiJOPJ5CdnRUnin">
+            <p:NodeReference LastCategoryFullName="OpenCV.Sink" LastSymbolSource="VL.OpenCV.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+              <CategoryReference Kind="Category" Name="Sink" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UJNaQXxhVLhMrcC3fRl8L7" Name="Bounds" Kind="InputPin" DefaultValue="1143, 44, 512, 318">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="NdOwFXTmXCMN4ZBXfM8iNo" Name="Input" Kind="InputPin" />
+            <Pin Id="E0bJFzuXfiJP1dzwn5Mzh4" Name="Title" Kind="InputPin" />
+            <Pin Id="PsSljSsKvx8LtiGDXlj9pz" Name="Renderer Mode" Kind="InputPin" />
+            <Pin Id="SP8LgZUWXcxPQSateLvART" Name="Show Info" Kind="InputPin" />
+            <Pin Id="KEafFFWpXC5NaBGp1tqr28" Name="Enabled" Kind="InputPin" />
+          </Node>
         </Canvas>
         <Patch Id="PezHqATNMeFLTtksi4UNfQ" Name="Create" />
         <Patch Id="CDQZ9HZLn4IOcjLct4UiIb" Name="Update" />
@@ -387,30 +424,20 @@
           <Fragment Id="Veya6qzFajYNtbX4R0DbJC" Patch="PezHqATNMeFLTtksi4UNfQ" Enabled="true" />
           <Fragment Id="FU499SennveMurBEPvVkpK" Patch="CDQZ9HZLn4IOcjLct4UiIb" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="AkUv03Mo9VcQXz1ZESkpGW" Ids="DTntQNMoSGsQRZjkqxFLP8,TIq68FJ3tiaOy0jc9hhLxV" />
         <Link Id="Fjx9cng1ZURP3ZkjTUfuV1" Ids="C1xEY0o2BgzOxXqZuKdtxW,L2aJQlCeln2MzMGTn9ftJb" />
         <Link Id="NDnydpLdId3P1TansIGCgA" Ids="HtF31Ix5X9WPn1T1kv0RFU,Ess2Hpalwm3M4iqL4n62F4" />
-        <Link Id="Ce77ZqJxEbtMAzEMk6KYnh" Ids="G93Qi91LeMJNc4b25bxIGT,Sk8uCcaIM4sPZohDRPg77u" />
         <Link Id="RfP8eDWDqNSPyYRE0kc1ps" Ids="Rwnk7DwpkCeNniLiQjFozq,Jz3kuBEWZ1eMGkCkvH62SE" />
         <Link Id="VSbOeL61xB1QBkFwNHVBJq" Ids="LvAzsIQTCmqLNIj6RyMStp,HBSta7pKMNXNNn3TinikKZ" />
         <Link Id="QK4kKFdDa7EMWRqqN9EtEM" Ids="Mag0aN8dscZNXGwov3SXNI,THeQWLFKvzOMB7alNwessQ" />
         <Link Id="MoyNkTNxxx9Pt1vnsjRUHm" Ids="C1xEY0o2BgzOxXqZuKdtxW,SLeAMtBTDWMNBv9wqrOpOt" />
         <Link Id="QeLC4bWkAm0O7l3B0OiSpS" Ids="J0pfrwtdIQeLzEUBAfrNWZ,J317Q9V08odPiIRm8BqBpq" />
         <Link Id="RZa0GdXJ5aNNFp78i9x41e" Ids="UfK2T0DzmorPFzpcBPI8n7,J4GZswpixnNPAqrQtcyT9u" />
-        <Link Id="CPsdeqMD352O0dJp1qL5Q8" Ids="TnwCt61R1CxMjK7W8PwDcS,N1x72wbSDVIOrsCmxIMjbh" />
-        <Link Id="AMBs8fEvP6eNVqXzj8asLY" Ids="M75mIFGc14FNv9guDn8OBp,P3CWUa3apNbQABDhvFlb9f" />
         <Link Id="JJ1a9x8ftTPMcEVIvxieo3" Ids="AlTuj7zkyZILKbuGbX3TQE,IGU4Go3WqeePC1rwGgahjP" />
         <Link Id="Am9iu30qmhcLOrHNa3c8mV" Ids="C1xEY0o2BgzOxXqZuKdtxW,RTbxDxxXrlrNqN4tuRnkQX" />
-        <Link Id="LEUf8e8oPPqOcD3Is8wI0D" Ids="BCr6SCdDLRKLhXw3dshtno,Fe4RDceLlm8O8nzHq2arF1" />
-        <Link Id="NdFG5180sojQdz3NLZ6Lmn" Ids="SkinBbza0PYNdgnlM0O7wM,LItvQITX23nNms47lPbUFC" />
-        <Link Id="Lc66zACVgnkMlOGzW9x530" Ids="NMz8AUQJ6AnNAg9RBDW74d,HR2tuIw1G5MNHtc6TY27Jl" />
-        <Link Id="SCUowwCzu15PTxgS7Ylxzr" Ids="HZ4qTccyVW0Owi5QTnw04t,TsTPk00e5EhOOnUVlcbFWa" />
         <Link Id="UcGb1FBVrQvQUS7NKbyZ9Y" Ids="BDIUIsumCALLlYLgDSa53y,NXevt5NmuJhNrGJIJPSwP4" />
         <Link Id="OGiwA34Xg1HPRhLrvSW1aq" Ids="SLY0w1KjBmjNksLcsXSoQ2,TLcLEMpoo7UNrodoj3lfdG" />
         <Link Id="DtiowJhynR1MoP5E3w8XQI" Ids="JamyNyVcOCnOuEsH1NDRaj,ATsD9uDhlCOMoWKPkO3mda" />
         <Link Id="DMgnVWI63j9LuLoeXV9GHg" Ids="B6Lj2hxoxcHOAWf9iHU81o,MbvozsUzalAMkTRo4YZdwk" />
-        <Link Id="TNAUh7QwS0ELS7BONTKBl4" Ids="Ug8lfuUiLzXPY2FgkvA1qb,HkLJtiUH4tAOsz9J48LOWr" />
-        <Link Id="ErP9J0TCWCaOqR5XgeL0N7" Ids="DNoPxijOcXALV4Gjs8Qpv0,JuKYCJFefteLh5eghxr5Gx" />
         <Link Id="IVWu3zJQj7AMEC0k9QvC0a" Ids="JamyNyVcOCnOuEsH1NDRaj,InL6FzKBmNPLqT3oSrfWBp" />
         <Link Id="LMZf9D0PPcfNR2QZb1RN7S" Ids="P65vcfm5AMsMLqMjDPQR3n,VGLuuSZwYrmNWIU875bfD6" />
         <Link Id="BSgO2VlJQRELavJJhVf2Xr" Ids="FcC9eEU48BgLVJdsuaTFw1,Du6VdNUwigZNeBgFogrIyi" />
@@ -418,6 +445,19 @@
         <Link Id="KfrruvmxksXLHUZmgJdH3g" Ids="OO5XlsUVTVNN7xiMVVYece,LLGj8l5ekA3PDvXYJulCcd" />
         <Link Id="VUpuk6mA4NdNqmBsCUtsei" Ids="V3uGLFdmbVIQcGLUpycx0m,SDdW0nbpeaCPVjyXSqVgQj" />
         <Link Id="Ovshggf0EBjNP8FN5jiuNx" Ids="OgGdbS7HgJiOgc5JcQCukA,QVysPXCB8FlLbmEBLgmWiQ" />
+        <Link Id="G0NZxMmehEVPT0sIoGa5Wm" Ids="OHLVRjPIlbcOtzfua7DmlG,AWIZMIfxRIqPUcD3xYMLD1" />
+        <Link Id="P9Og0OqcB6yL4otktO6AKj" Ids="CLy0wOiKXs2PA3gmDQnMWH,P3CWUa3apNbQABDhvFlb9f" />
+        <Link Id="FcdJfhdvouOOZuVDYgTVhN" Ids="Ug8lfuUiLzXPY2FgkvA1qb,Av42IWa0zNWOslg9r1nTed" />
+        <Link Id="QYGB4aqvPn3MqeimHHipZE" Ids="RzVd2o11COwLCkmDfaiJjy,Hc6QEwPEFimQJbtnYyYLW6" />
+        <Link Id="A6PalsRfIBROPpkdYH3KLh" Ids="UgqCIHuFLiCPOla3wtByAW,J3KP6CKoXLlMq7Tu2RJ5Qw" />
+        <Link Id="LqKlw6bsgd0NhkVdm3YKtQ" Ids="HGVF9C228RJNX5QpZvdGtS,FBW5bGIpDrTL2D5JENWmmP" />
+        <Link Id="LSpo4zTSwFQMJBdeOFq9i9" Ids="Q1MgIIy67lXLJtV4Ovh2FE,Njc9EVipCGON5rpQjMdrfD" />
+        <Link Id="A5Qk5Tb06iyOL0V7d2xdFn" Ids="BCr6SCdDLRKLhXw3dshtno,HVe3WAQ4irQLdjeH5M0SUZ" />
+        <Link Id="DIlyCYx0AaMNQEd9jkG1n8" Ids="LM7dyzByBpxNGu1emC32KT,RTYXgWOWPEdOOlHAwSHj8V" />
+        <Link Id="K0GEFY6ytJOMrUghFWRhbl" Ids="RjTaaE7IjRrQcN11FOwUM0,ROs1HycWJldN5GOjxBHHpo" />
+        <Link Id="Nnnqp3sOz44PBxm3kSmLXl" Ids="DLal5RHBPABM38LMYMfZel,EzujTv8UytgODuCwsLsYlu" />
+        <Link Id="PsgMcAawZLhLuvAsq627N1" Ids="G93Qi91LeMJNc4b25bxIGT,TLYXf6qNkWpLD8FkZDfqeW" />
+        <Link Id="GujTMr1jA1ZOOcZjI9D6yf" Ids="PcAb6HgfzN1LOmuWyZ8iuM,NdOwFXTmXCMN4ZBXfM8iNo" />
       </Patch>
     </Node>
   </Patch>
