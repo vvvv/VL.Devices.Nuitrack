@@ -2,6 +2,8 @@
 using System;
 using System.Reactive.Linq;
 using VL.Lib.Basics.Imaging;
+using VL.Lib.Collections;
+using Xenko.Core.Mathematics;
 
 namespace VL.Devices.Nuitrack
 {
@@ -70,28 +72,24 @@ namespace VL.Devices.Nuitrack
 
         public static IImage ToColorImage(ColorFrame frame)
         {
-
             ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R8G8B8);
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }
 
-        public static IImage ToDepthImage(DepthFrame frame)
+        public static DepthImage ToDepthImage(DepthFrame frame)
         {
-
-            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R16);
-            ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
-            return image;
+            return new DepthImage(frame);
         }
 
         public static IImage ToUserImage(UserFrame frame)
         {
-
             ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R16);
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }
 
+        public static Spread<Xenko.Core.Mathematics.Vector3> ToPointCloud(this DepthImage image, int minZ, int maxZ, int decimation) => PointCloud.GetPoints(image, minZ, maxZ, decimation);
 
     }
 }
