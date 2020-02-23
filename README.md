@@ -37,7 +37,7 @@ After the steps above have been done you will need to activate your Nuitrack ins
 
 ### Getting an activation key
 
-If you have registered on nuitrack.com but for any reason do not have a key at hand, you can head to (https://cognitive.3divi.com/app/nuitrack/dashboard/) and at the bottom click on "Generate a key". The provided key should allow you to activate your copy of Nuitrack SDK.
+If you have registered on nuitrack.com but for any reason do not have a key at hand, you can head to (https://cognitive.3divi.com/app/nuitrack/dashboard/) and select your key from the "Other licenses" list or Activate a new key using one of the "Activate" buttons (Trial or Available licenses) at the top. The provided key should allow you to activate your copy of Nuitrack SDK.
 
 ### Using Nuitrack in VL
 
