@@ -4,14 +4,15 @@
     <id>VL.Devices.Nuitrack</id>
     <version>$version$</version>
     <title>VL.Devices.Nuitrack</title>
-    <authors>vvvv</authors>
+    <authors>Randall Vázquez, vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.Devices.NuiTrack</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A VL wrapper for the Nuitrack API</summary>
     <description>Nuitrack for VL</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
-    <tags>VL, Nuitrack, skeleton, camera, video, depth</tags>
+    <tags>VL, Nuitrack, skeleton, camera, video, depth, body, tracking</tags>
+	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
       <dependency id="" version="[]" />
     </dependencies>
