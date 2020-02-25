@@ -72,7 +72,7 @@ namespace VL.Devices.Nuitrack
 
         public static IImage ToColorImage(ColorFrame frame)
         {
-            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R8G8B8);
+            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.B8G8R8);
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }

@@ -1,25 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
   <PropertyGroup>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BF6BC14C-CC1F-4F5F-B491-452662B4D4A1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VL.Devices.Nuitrack</RootNamespace>
-    <AssemblyName>VL.Devices.Nuitrack</AssemblyName>
-    <OutputPath>..\lib\</OutputPath>
     <TargetFramework>net472</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\lib\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Kinect" Version="2.0.1410.19000" />
-    <PackageReference Include="VL.Core" Version="2019.1.0-0623-gf7d576a202" />
-    <PackageReference Include="Xenko.Core.Mathematics" Version="3.1.0.1-beta02-0674" />
+    <PackageReference Include="VL.Core" Version="2019.2.0-0270-g88195a725e" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="nuitrack.net">
