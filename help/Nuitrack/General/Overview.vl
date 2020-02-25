@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.1.0-0624-g5df7a10830" Version="0.128">
-  <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.1.0-420" />
+<Document xmlns:p="property" Id="JJouEclBec6NOK64Cqe3iz" LanguageVersion="2019.2.0-0272-9a27325b09" Version="0.128">
+  <NugetDependency Id="E2cC3tZl5w2PeVoAPqRxc9" Location="VL.CoreLib" Version="2019.2.0-0257-g243e7b57e7" />
   <Patch Id="SOGuJg2kg20OOIaKiNqoH0">
     <Canvas Id="OLpATbPPMmSLOYa0wesFn0" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -67,6 +67,7 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="J4GZswpixnNPAqrQtcyT9u" Name="Input" Kind="InputPin" />
+            <Pin Id="VHuJj4QuJ7MMzUfi4IZMoQ" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="OHLVRjPIlbcOtzfua7DmlG" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="261,527,125,19" Id="J3J9meoleiBL5fjdR2pT3c">
@@ -84,6 +85,8 @@
             <Pin Id="NoQGnvsQ8l6PdSKTsdQNKV" Name="Color" Kind="InputPin" />
             <Pin Id="KbtP2qlLaAuLgEVKcy0FeR" Name="Clear" Kind="InputPin" />
             <Pin Id="Dkoq896YJ9XLD66u4RkVNv" Name="Space" Kind="InputPin" />
+            <Pin Id="Ju11ElXEaXcPRcu6ZvZFe1" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="HLjmKgR6y80NKzjojWr23e" Name="VSync" Kind="InputPin" />
             <Pin Id="Pm8YkKrQ5ScOPoseZ77LsM" Name="Enabled" Kind="InputPin" />
             <Pin Id="OFEoYcGR797M3Md0M9hB9v" Name="Form" Kind="OutputPin" />
             <Pin Id="UjnfeOUQq8fL0kFu4lkgDR" Name="ClientBounds" Kind="OutputPin" />
@@ -271,6 +274,8 @@
             <Pin Id="MXHUsCBZHddMnyrnAfVbml" Name="Color" Kind="InputPin" />
             <Pin Id="HuUgIPhkMpZPrMI9VWM9xG" Name="Clear" Kind="InputPin" />
             <Pin Id="Ens0apaxgaCMaoLzYTdu3c" Name="Space" Kind="InputPin" />
+            <Pin Id="DOGbJd80niwNPEjtVOx4CO" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="MuqsjrZ7I19MSYwdU8LMqm" Name="VSync" Kind="InputPin" />
             <Pin Id="IRQWJQxVGWwQTzw8VW14Oc" Name="Enabled" Kind="InputPin" />
             <Pin Id="J593qhN9mxLPsnQCaPX7Ci" Name="Form" Kind="OutputPin" />
             <Pin Id="Je5ivBjtMTZOhTO0wkQyjq" Name="ClientBounds" Kind="OutputPin" />
@@ -328,6 +333,8 @@
             <Pin Id="UiAS1wdycy6ObZ1GFmH4JP" Name="Color" Kind="InputPin" />
             <Pin Id="TQcU09vtssNNT9Gh4YgF7O" Name="Clear" Kind="InputPin" />
             <Pin Id="TaQe96P74ulOBHGwUNunIz" Name="Space" Kind="InputPin" />
+            <Pin Id="TFhhWByMjEoMMEprHZxQFv" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="Iglsp8UQ1QUMb4Dv2RbOyL" Name="VSync" Kind="InputPin" />
             <Pin Id="Krxd4529vwVM6S5ndcEj30" Name="Enabled" Kind="InputPin" />
             <Pin Id="MaENSt9MSVbOHjjkgjhGgy" Name="Form" Kind="OutputPin" />
             <Pin Id="U8nG1r5nHUjPA4xhpFDqle" Name="ClientBounds" Kind="OutputPin" />
@@ -382,6 +389,7 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="TPqtcxP8hWHMawQdfEjIJY" Name="Input" Kind="InputPin" />
+            <Pin Id="NtVOfSsf5x8PVGFcvgpdUC" Name="Discard Higher Bits" Kind="InputPin" />
             <Pin Id="GFNFqxHoln1OEtH27kiTml" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="80,297,88,19" Id="VonweEPVSj8OjwBQV4DlCa">
@@ -410,7 +418,6 @@
         <Link Id="RfP8eDWDqNSPyYRE0kc1ps" Ids="Rwnk7DwpkCeNniLiQjFozq,Jz3kuBEWZ1eMGkCkvH62SE" />
         <Link Id="VSbOeL61xB1QBkFwNHVBJq" Ids="LvAzsIQTCmqLNIj6RyMStp,HBSta7pKMNXNNn3TinikKZ" />
         <Link Id="QK4kKFdDa7EMWRqqN9EtEM" Ids="Mag0aN8dscZNXGwov3SXNI,THeQWLFKvzOMB7alNwessQ" />
-        <Link Id="MoyNkTNxxx9Pt1vnsjRUHm" Ids="C1xEY0o2BgzOxXqZuKdtxW,SLeAMtBTDWMNBv9wqrOpOt" />
         <Link Id="QeLC4bWkAm0O7l3B0OiSpS" Ids="J0pfrwtdIQeLzEUBAfrNWZ,J317Q9V08odPiIRm8BqBpq" />
         <Link Id="RZa0GdXJ5aNNFp78i9x41e" Ids="UfK2T0DzmorPFzpcBPI8n7,J4GZswpixnNPAqrQtcyT9u" />
         <Link Id="JJ1a9x8ftTPMcEVIvxieo3" Ids="AlTuj7zkyZILKbuGbX3TQE,IGU4Go3WqeePC1rwGgahjP" />
@@ -440,9 +447,10 @@
         <Link Id="A2jAf4mHxCYLwBjOgxtOjm" Ids="HtF31Ix5X9WPn1T1kv0RFU,FH1twL83QP5QYL6ZOy6cFV" />
         <Link Id="J1C5BX362kwPFKwJc5Otir" Ids="VXxFFCQKPsuLw8WmuxKAtk,TPqtcxP8hWHMawQdfEjIJY" />
         <Link Id="UYHr2Ho5mLyLeWoCS1u9kX" Ids="GFNFqxHoln1OEtH27kiTml,Gae98df2nnZODog4m9g1Ai" />
+        <Link Id="Gx4pYtVv3C4QTYl8EolMEJ" Ids="C1xEY0o2BgzOxXqZuKdtxW,SLeAMtBTDWMNBv9wqrOpOt" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KlH9Yu05DMgQaMxNBLd7ih" Location="VL.Skia" Version="2019.1.0-0420-gd786f06fc5" />
+  <NugetDependency Id="KlH9Yu05DMgQaMxNBLd7ih" Location="VL.Skia" Version="2019.2.0-0257-g243e7b57e7" />
   <DocumentDependency Id="FquE01ATPFJL0adVvr4Tf9" Location="../../../VL.Devices.NuiTrack.vl" />
 </Document>
