@@ -4,15 +4,15 @@ using VL.Lib.Basics.Imaging;
 namespace VL.Devices.Nuitrack
 {
     // Exposes the kinect frame buffer directly
-    public class DepthImage : IImage
+    public class ColorImage : IImage
     {
-        public readonly DepthFrame Frame;
+        public readonly ColorFrame Frame;
         private readonly ArrayImage<byte> image;
 
-        public DepthImage(DepthFrame frame)
+        public ColorImage(ColorFrame frame)
         {
             Frame = frame;
-            Info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.R16);
+            Info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.B8G8R8);
             image = new ArrayImage<byte>(frame.Data, Info, true);
         }
 

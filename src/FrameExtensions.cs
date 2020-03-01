@@ -70,11 +70,9 @@ namespace VL.Devices.Nuitrack
                     cfaHandler => skeletonTracker.OnSkeletonUpdateEvent -= cfaHandler);
         }
 
-        public static IImage ToColorImage(ColorFrame frame)
+        public static ColorImage ToColorImage(ColorFrame frame)
         {
-            ImageInfo info = new ImageInfo(frame.Cols, frame.Rows, PixelFormat.B8G8R8);
-            ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
-            return image;
+            return new ColorImage(frame);
         }
 
         public static DepthImage ToDepthImage(DepthFrame frame)
@@ -88,8 +86,5 @@ namespace VL.Devices.Nuitrack
             ArrayImage<byte> image = new ArrayImage<byte>(frame.Data, info, true);
             return image;
         }
-
-        public static Spread<Xenko.Core.Mathematics.Vector3> ToPointCloud(this DepthImage image, int minZ, int maxZ, int decimation) => PointCloud.GetPoints(image, minZ, maxZ, decimation);
-
     }
 }

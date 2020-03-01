@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using nuitrack;
 using VL.Lib.Collections;
 
@@ -6,25 +7,54 @@ namespace VL.Devices.Nuitrack
 {
     public static class PointCloud
     {
-        public static unsafe Spread<Xenko.Core.Mathematics.Vector3> GetPoints(DepthImage image, int minZ, int maxZ, int decimation)
+        public static SpreadBuilder<ColoredPoint> AddPoints(
+            SpreadBuilder<ColoredPoint> builder, 
+            DepthSensor sensor, 
+            ColorFrame colorFrame, 
+            DepthFrame depthFrame, 
+            int minZ = 100,
+            int maxZ = ushort.MaxValue, 
+            int decimation = 1)
         {
-            DepthFrame frame = image.frame;
-            var step = Math.Max(1, decimation + 1);
-            var width = frame.Cols / step;
-            var height = frame.Rows / step;
-            var count = width * height;
-            SpreadBuilder<Xenko.Core.Mathematics.Vector3> sb = new SpreadBuilder<Xenko.Core.Mathematics.Vector3>(count);
+            if (builder is null)
+                throw new ArgumentNullException(nameof(builder));
+            if (sensor is null)
+                throw new ArgumentNullException(nameof(sensor));
+            if (colorFrame is null)
+                throw new ArgumentNullException(nameof(colorFrame));
+            if (depthFrame is null)
+                throw new ArgumentNullException(nameof(depthFrame));
+            if (colorFrame.Cols != depthFrame.Cols || colorFrame.Rows != depthFrame.Rows)
+                throw new ArgumentException("The color image must have the same size as the depth image.");
 
-            for (int row = 0; row < height; row++)
+            var width = depthFrame.Cols;
+            var height = depthFrame.Rows;
+
+            for (var y = 0; y < height; y += decimation)
             {
-                for (int col = 0; col < width; col++)
+                for (var x = 0; x < width; x += decimation)
                 {
-                    ushort z = frame[ row * step, col * step];
-                    if (z > minZ && z < maxZ)
-                        sb.Add(new Xenko.Core.Mathematics.Vector3(col * step, row * step, z));
+                    var z = depthFrame[y, x];
+                    if (z >= minZ && z <= maxZ)
+                    {
+                        var c = colorFrame[y, x];
+                        var p = sensor.ConvertProjToRealCoords(x, y, z);
+                        builder.Add(new ColoredPoint(AsVector3(ref p), ToColor(in c)));
+                    }
                 }
             }
-            return sb.ToSpread();
+
+            return builder;
+        }
+
+        static Xenko.Core.Mathematics.Vector3 AsVector3(ref Vector3 vector)
+        {
+            return Unsafe.As<Vector3, Xenko.Core.Mathematics.Vector3>(ref vector);
+        }
+
+        static Xenko.Core.Mathematics.Color ToColor(in Color3 color)
+        {
+            return new Xenko.Core.Mathematics.Color(color.Red, color.Green, color.Blue);
         }
     }
 }
