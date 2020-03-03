@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.2.0-0272-9a27325b09" Version="0.128">
-  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.2.0-0257-g243e7b57e7" />
+<Document xmlns:p="property" Id="LIEtYdrRy3kPqelydP6a1l" LanguageVersion="2019.2.0-0301-ec740887ac" Version="0.128">
+  <NugetDependency Id="EEYSk9rCs8TLQ1HUJFqHly" Location="VL.CoreLib" Version="2019.2.0-0301-gec740887ac" />
   <Patch Id="OF6M52TF0g1MIvRz41ucGu">
     <Canvas Id="Ue7xuqlBZHlLeRL5dLjZsS" DefaultCategory="Devices.Nuitrack" CanvasType="FullCategory">
       <!--
@@ -2351,7 +2351,7 @@
               <Patch Id="LCg9I3YadzjMSqIJbwQaNN" ManuallySortedPins="true">
                 <Patch Id="JFqEKMR6HD2LSsywXNYztB" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="EJWxJmoVrDMP9XUrqThSt7" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="394,337,336,356" Id="DFhBWnqA7XDOmwurml5SsT">
+                <Node Bounds="341,337,389,356" Id="DFhBWnqA7XDOmwurml5SsT">
                   <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ImmutableInterfaceType" Name="Observable" />
                     <Choice Kind="OperationCallFlag" Name="Using (Provider)" />
@@ -2364,7 +2364,7 @@
                     <Pin Id="LyPzvA2vtm0QEqnPbCqXKZ" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="Ei1zDsZqtvxMX5A6DsJ1d1" Bounds="426,345" />
                     <ControlPoint Id="GEkxASclNNRNMY7N74B9hh" Bounds="423,686" />
-                    <Node Bounds="542,366,90,26" Id="DbfdhSNvVpmOe7dAjcW2om">
+                    <Node Bounds="425,369,90,26" Id="DbfdhSNvVpmOe7dAjcW2om">
                       <p:NodeReference LastCategoryFullName="Devices.Nuitrack.NuitrackDevice.Sensors" LastSymbolSource="VL.Devices.NuiTrack.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Sensors" />
@@ -2374,7 +2374,7 @@
                       <Pin Id="Is0tQA789pOM1WzxojUuC8" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="SIkHYwP4zLaLZaYWnUUc46" Name="Depth" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="543,406,104,19" Id="MlDfkMC1ZekQCjLMEc0nwE">
+                    <Node Bounds="426,409,104,19" Id="MlDfkMC1ZekQCjLMEc0nwE">
                       <p:NodeReference LastCategoryFullName="VL.Devices.Nuitrack.FrameExtensions" LastSymbolSource="VL.Devices.Nuitrack.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="DepthFrameArrived" />
@@ -2382,7 +2382,7 @@
                       <Pin Id="QzqR7fkwCNALCr2qzazmlL" Name="Sensor" Kind="InputPin" />
                       <Pin Id="FIFwWSKp7cAMMfyxHg1ryi" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="424,371,87,26" Id="LZSYX3G1PeoMnaTW1M4itv">
+                    <Node Bounds="549,371,87,26" Id="LZSYX3G1PeoMnaTW1M4itv">
                       <p:NodeReference LastCategoryFullName="Devices.Nuitrack.NuitrackDevice.Sensors" LastSymbolSource="VL.Devices.NuiTrack.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Sensors" />
@@ -2392,7 +2392,7 @@
                       <Pin Id="Q9759y0rLoCOEDyLp7h83J" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="KL3bCMk59qxPPwTtIp6i6T" Name="Color" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="425,407,102,19" Id="DI0UysR5ga6QVw7HK5pJ15">
+                    <Node Bounds="550,407,102,19" Id="DI0UysR5ga6QVw7HK5pJ15">
                       <p:NodeReference LastCategoryFullName="VL.Devices.Nuitrack.FrameExtensions" LastSymbolSource="VL.Devices.Nuitrack.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ColorFrameArrived" />
@@ -2400,10 +2400,11 @@
                       <Pin Id="DHd13leEpqVOvhBXEIFFvd" Name="Sensor" Kind="InputPin" />
                       <Pin Id="GWL89IVbihNPF3LBd01cs5" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="425,445,241,213" Id="Qlo224qndxMNeOIDQEZtC4">
-                      <p:NodeReference LastCategoryFullName="Reactive.Observable" LastSymbolSource="VL.Reactive.vl">
-                        <Choice Kind="OperationCallFlag" Name="Zip (2 -&gt; 1)" />
+                    <Node Bounds="428,445,240,213" Id="Qlo224qndxMNeOIDQEZtC4">
+                      <p:NodeReference LastCategoryFullName="System.Reactive.Linq.Observable" LastSymbolSource="System.Reactive.dll">
                         <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="WithLatestFrom" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Observable" NeedsToBeDirectParent="true" />
                       </p:NodeReference>
                       <Pin Id="KeKAbGhrNuzOyRm7V9ZSh4" Name="Input" Kind="StateInputPin" />
                       <Pin Id="OojXnaMuirDNPiAw5pA3hn" Name="Second" Kind="InputPin" />
@@ -2431,7 +2432,7 @@
                           <Pin Id="TGSJx6hIEgtNPpAJtNPSzu" Name="Decimation" Kind="InputPin" />
                           <Pin Id="IiB9zQ2v9lxMKWzdhP7Yn2" Name="Output" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="437,483,93,26" Id="FnROMrUpjAdMRdCmBzN23P">
+                        <Node Bounds="563,489,93,26" Id="FnROMrUpjAdMRdCmBzN23P">
                           <p:NodeReference LastCategoryFullName="VL.Devices.Nuitrack.ColorFrameEventArgs" LastSymbolSource="VL.Devices.Nuitrack.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="ColorFrameEventArgs" />
@@ -2441,7 +2442,7 @@
                           <Pin Id="NRFNfC34lEHQXFZXrKUv9Y" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="LQOtk3U5gCyLmcgh7PDlmG" Name="Color Frame" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="559,482,95,26" Id="MEyyo9427lwM7kz6sf5mhC">
+                        <Node Bounds="440,491,95,26" Id="MEyyo9427lwM7kz6sf5mhC">
                           <p:NodeReference LastCategoryFullName="VL.Devices.Nuitrack.DepthFrameEventArgs" LastSymbolSource="VL.Devices.Nuitrack.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="DepthFrameEventArgs" />
@@ -2513,10 +2514,6 @@
           <Link Id="Q6EITlFlA1uNQxhRXewjUF" Ids="Dv5tBcOKZU0OiguqFxEwFV,EFiEUCAP4EnMwgmCpmGtIw" IsHidden="true" />
           <Link Id="VE1WAS8BSvrNN9dYVrpEq0" Ids="LIBbPmpcVwfNoAN3yl59wK,QcFs1O4lxTZMcy52kz1SxJ" IsHidden="true" />
           <Link Id="NJWtXoMSTriMcOoWzNzW3D" Ids="SIkHYwP4zLaLZaYWnUUc46,Kctvjb3xehJMyrgvwqITtG" />
-          <Link Id="VB2Kd5OMBChQGQa6FywkeL" Ids="GWL89IVbihNPF3LBd01cs5,KeKAbGhrNuzOyRm7V9ZSh4" />
-          <Link Id="M27ltGIl8c7L5BFJ8mVE0U" Ids="FIFwWSKp7cAMMfyxHg1ryi,OojXnaMuirDNPiAw5pA3hn" />
-          <Link Id="M7O64fmswWUMdxDm2VHVw7" Ids="O0FlSRTrbAgLTDvw75ToPx,QtZEpDZoasAOCqphyZjBtE" />
-          <Link Id="TaIEfViJU1kNuxhplla6ty" Ids="EFiEUCAP4EnMwgmCpmGtIw,K4piqAXURPSQdxMjpiHMsV" />
           <Link Id="F0ZsQtUaybtNAZc9I3Q934" Ids="LvVdmLUAgs6MdlgJ0io2bY,VlNMhZpKiBlOFLVOVqiN0a" />
           <Link Id="SI4pCaxMIXoOlrYyomic47" Ids="LQOtk3U5gCyLmcgh7PDlmG,DilPDmNeSCgNrwTqwVDmVb" />
           <Link Id="GRQHdqfFwuaNO63IYEoqMy" Ids="FXCFAEEfwmQMFlbTqr1v6p,GEkxASclNNRNMY7N74B9hh" />
@@ -2533,6 +2530,10 @@
           <Link Id="MBmJlxyuzyLPpXbjFh07Gt" Ids="E00qDoQqc7cOONhOdUqVFC,ClA6J9cPmofP1MToWoSuPT" />
           <Link Id="P8XtSuhbwEXNYZGPB2E2CP" Ids="E4ed9jtfbnsLdu4lihfZR2,Msl7a8KehrpPxmO6IwhHvE" />
           <Link Id="Dis24RKRiX8N2LfmDWJD83" Ids="Msl7a8KehrpPxmO6IwhHvE,PUa6Zb2aHwWPLSMJw2SGJ7" />
+          <Link Id="RJtrEGYwgIZOpT9xh6H8VR" Ids="O0FlSRTrbAgLTDvw75ToPx,K4piqAXURPSQdxMjpiHMsV" />
+          <Link Id="NCTOG41WMUaMxjO46iCQHy" Ids="FIFwWSKp7cAMMfyxHg1ryi,KeKAbGhrNuzOyRm7V9ZSh4" />
+          <Link Id="BUVylV38tabOFnbHxObSrs" Ids="GWL89IVbihNPF3LBd01cs5,OojXnaMuirDNPiAw5pA3hn" />
+          <Link Id="D6NdqlDj092PP6fn55oKKx" Ids="EFiEUCAP4EnMwgmCpmGtIw,QtZEpDZoasAOCqphyZjBtE" />
         </Patch>
       </Node>
       <!--
@@ -2643,7 +2644,7 @@
   </Patch>
   <PlatformDependency Id="S36JEFIXXVvMre7qt6H783" Location="System" />
   <PlatformDependency Id="JMvORQOQIzrPEj9eCKbrF5" Location="System.Runtime" />
-  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2019.2.0-0257-g243e7b57e7" />
+  <NugetDependency Id="K4ICfeTj9dxLVvHqmGPgT9" Location="VL.Core" Version="2019.2.0-0301-gec740887ac" />
   <PlatformDependency Id="BUpgGtLZTuWOOQIIwQPuZE" Location="System.Runtime.InteropServices" />
   <PlatformDependency Id="FT9TxKi4fH0QMBKSVmLjbM" Location="./lib/net461/nuitrack.net.dll" />
   <PlatformDependency Id="Tx5Ww8gDWCSLqouiypeaQ1" Location="./lib/net461/VL.Devices.Nuitrack.dll" />
