@@ -24,11 +24,13 @@ namespace VL.Devices.Nuitrack
                 throw new ArgumentNullException(nameof(colorFrame));
             if (depthFrame is null)
                 throw new ArgumentNullException(nameof(depthFrame));
-            if (colorFrame.Cols != depthFrame.Cols || colorFrame.Rows != depthFrame.Rows)
-                throw new ArgumentException("The color image must have the same size as the depth image.");
+            if (colorFrame.Cols < depthFrame.Cols || colorFrame.Rows < depthFrame.Rows)
+                throw new ArgumentException("The color image must have at least the same size as the depth image.");
 
             var width = depthFrame.Cols;
             var height = depthFrame.Rows;
+            var strideX = colorFrame.Cols / depthFrame.Cols;
+            var strideY = colorFrame.Rows / depthFrame.Rows;
 
             for (var y = 0; y < height; y += decimation)
             {
@@ -37,7 +39,7 @@ namespace VL.Devices.Nuitrack
                     var z = depthFrame[y, x];
                     if (z >= minZ && z <= maxZ)
                     {
-                        var c = colorFrame[y, x];
+                        var c = colorFrame[y * strideY, x * strideX];
                         var p = sensor.ConvertProjToRealCoords(x, y, z);
                         builder.Add(new ColoredPoint(AsVector3(ref p), ToColor(in c)));
                     }
