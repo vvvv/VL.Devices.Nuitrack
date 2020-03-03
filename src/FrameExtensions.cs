@@ -12,6 +12,9 @@ namespace VL.Devices.Nuitrack
     {
         public static IObservable<ColorFrameEventArgs> ColorFrameArrived(ColorSensor sensor)
         {
+            if (sensor is null)
+                return Observable.Empty<ColorFrameEventArgs>();
+
             return Observable.FromEvent<ColorSensor.OnUpdate, ColorFrameEventArgs>(handler =>
             {
                 ColorSensor.OnUpdate cfaHandler = (x) =>
@@ -27,6 +30,9 @@ namespace VL.Devices.Nuitrack
 
         public static IObservable<DepthFrameEventArgs> DepthFrameArrived(DepthSensor sensor)
         {
+            if (sensor is null)
+                return Observable.Empty<DepthFrameEventArgs>();
+
             return Observable.FromEvent<DepthSensor.OnUpdate, DepthFrameEventArgs>(handler =>
             {
                 DepthSensor.OnUpdate cfaHandler = (x) =>
@@ -42,6 +48,9 @@ namespace VL.Devices.Nuitrack
 
         public static IObservable<UserFrameEventArgs> UserFrameArrived(UserTracker userTracker)
         {
+            if (userTracker is null)
+                return Observable.Empty<UserFrameEventArgs>();
+
             return Observable.FromEvent<UserTracker.OnUpdate, UserFrameEventArgs>(handler =>
             {
                 UserTracker.OnUpdate cfaHandler = (x) =>
@@ -57,6 +66,9 @@ namespace VL.Devices.Nuitrack
 
         public static IObservable<SkeletonDataEventArgs> SkeletonDataArrived(SkeletonTracker skeletonTracker)
         {
+            if (skeletonTracker is null)
+                return Observable.Empty<SkeletonDataEventArgs>();
+
             return Observable.FromEvent<SkeletonTracker.OnSkeletonUpdate, SkeletonDataEventArgs>(handler =>
             {
                 SkeletonTracker.OnSkeletonUpdate cfaHandler = (x) =>
