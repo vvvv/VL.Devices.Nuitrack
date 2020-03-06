@@ -31,10 +31,11 @@ namespace VL.Devices.Nuitrack
             var height = depthFrame.Rows;
             var strideX = colorFrame.Cols / depthFrame.Cols;
             var strideY = colorFrame.Rows / depthFrame.Rows;
+            var step = Math.Max(1, decimation);
 
-            for (var y = 0; y < height; y += decimation)
+            for (var y = 0; y < height; y += step)
             {
-                for (var x = 0; x < width; x += decimation)
+                for (var x = 0; x < width; x += step)
                 {
                     var z = depthFrame[y, x];
                     if (z >= minZ && z <= maxZ)
