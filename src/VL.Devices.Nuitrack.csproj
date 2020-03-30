@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Kinect" Version="2.0.1410.19000" />
-    <PackageReference Include="VL.Core" Version="2019.2.0-0270-g88195a725e" />
+    <PackageReference Include="VL.Core" Version="2020.1.0-0044-g720b6d4fe8" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="nuitrack.net">
