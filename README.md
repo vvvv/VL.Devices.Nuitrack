@@ -1,11 +1,11 @@
-# VL.Devices.NuiTrack
-Set of nodes to use the [Nuitrack API](https://nuitrack.com) in vl.
+# VL.Devices.Nuitrack
+Set of nodes to use the [Nuitrack API](https://nuitrack.com) in VL.
 
 ## Using the library
 Ensure you've a recent VL version installed (>= 2019.2-0300).
 
 ### Nuget installation
-In order to use this library with vl you have to install the nuget that is available via nuget.org. For information on how to use nugets with vl, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the vl documentation. As described there you go to the commandline and then type:
+In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the VL documentation. As described there you go to the commandline and then type:
 
     nuget install VL.Devices.Nuitrack -prerelease
 
@@ -42,7 +42,7 @@ If you have registered on nuitrack.com but for any reason do not have a key at h
 
 ### Using Nuitrack in VL
 
-Once you have gone through the steps above and the VL.Devices.Nuitrack nuget is installed and referenced in your vl document you'll see the category "Nuitrack" under "Devices" in the nodebrowser.
+Once you have gone through the steps above and the VL.Devices.Nuitrack nuget is installed and referenced in your VL document you'll see the category "Nuitrack" under "Devices" in the nodebrowser.
 
 VL help patches can be found here:
 
@@ -62,7 +62,7 @@ in VisualStudio and build it. This is necessary for a few things that cannot yet
 
 ### Reference VL.Devices.Nuitrack.vl
 
-In the vl document where you want to have access to the Kinect2 nodeset, add a dependency to:
+In the VL document where you want to have access to the Kinect2 nodeset, add a dependency to:
 
 	X:\vl-libs\VL.Devices.Nuitrack\VL.Devices.Nuitrack.vl
 

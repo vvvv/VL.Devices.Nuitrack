@@ -82,6 +82,24 @@ namespace VL.Devices.Nuitrack
                     cfaHandler => skeletonTracker.OnSkeletonUpdateEvent -= cfaHandler);
         }
 
+        public static IObservable<HandTrackerDataEventArgs> HandDataArrived(HandTracker handTracker)
+        {
+            if (handTracker is null)
+                return Observable.Empty<HandTrackerDataEventArgs>();
+
+            return Observable.FromEvent<HandTracker.OnUpdate, HandTrackerDataEventArgs>(handler =>
+            {
+                HandTracker.OnUpdate cfaHandler = (x) =>
+                {
+                    handler(new HandTrackerDataEventArgs(x));
+                };
+
+                return cfaHandler;
+            },
+                    cfaHandler => handTracker.OnUpdateEvent += cfaHandler,
+                    cfaHandler => handTracker.OnUpdateEvent -= cfaHandler);
+        }
+
         public static ColorImage ToColorImage(ColorFrame frame)
         {
             return new ColorImage(frame);
