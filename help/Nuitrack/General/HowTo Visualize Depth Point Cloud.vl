@@ -197,7 +197,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="211,149,-7,19" Id="IqhBnTFiE2IONMjwsncAGO">
-            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Nuitrack" />
             </p:NodeReference>
@@ -233,7 +233,7 @@
             <Pin Id="RW97FBdLCEtNwYlhNXXFsr" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="211,252,28,19" Id="OrGEPK2q4gcL6s1AfoTLJy">
-            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
@@ -247,38 +247,29 @@
             </Pin>
             <Pin Id="B7ENe7t764yP3XdeoRPniA" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="199,350,86,139" Id="JDKb6cEcDigML1WD1ehxLT">
+          <Node Bounds="199,350,86,95" Id="JDKb6cEcDigML1WD1ehxLT">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
             <Pin Id="BNpEKgpjeDhP8zavF4OVFR" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="UbxpEtyye3ULrn6wtAq2uC" Bounds="213,357" Alignment="Top" />
+            <ControlPoint Id="FhnX4oEeeIJNxv8IIKDJeX" Bounds="213,439" Alignment="Bottom" />
             <Patch Id="GD69sP80YRQQQVH3vdcD8a" ManuallySortedPins="true">
               <Patch Id="AuKnK5zcviZPZ8siJn5EtD" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Ep2mNVbP6GMMe99bYBtVti" Name="Update" ManuallySortedPins="true" />
               <Patch Id="VRbpPKRTCkRPSzrNsj2Peh" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="211,385,62,26" Id="VBH3rBkfc7mNBBh0Fnq0ra">
-                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.ColoredPoint" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.ColoredPoint" LastSymbolSource="VL.Devices.Nuitrack.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ColoredPoint" />
                   <Choice Kind="OperationCallFlag" Name="Position" />
                 </p:NodeReference>
                 <Pin Id="JrwjSuZpRziPBZ2vxZDWpg" Name="Input" Kind="StateInputPin" />
-                <Pin Id="OC5UHllnjKSMbv46lg9CmB" Name="Position" Kind="OutputPin" />
-              </Node>
-              <Node Bounds="211,442,25,19" Id="E3ULKcS4m9QNeb2FobBgkF">
-                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="*" />
-                </p:NodeReference>
-                <Pin Id="ITfGIfGLwzHMslUIP8SM4r" Name="Input" Kind="InputPin" />
-                <Pin Id="Sjkb7xKnzcrL6ZQfxet85a" Name="Input 2" Kind="InputPin" />
-                <Pin Id="FTvjnFp1Kv5OAXngHoVDkj" Name="Output" Kind="OutputPin" />
+                <Pin Id="JBplAuIYKbSLJNBAxL8b4T" Name="Output" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="UbxpEtyye3ULrn6wtAq2uC" Bounds="213,357" Alignment="Top" />
-            <ControlPoint Id="FhnX4oEeeIJNxv8IIKDJeX" Bounds="213,484" Alignment="Bottom" />
           </Node>
           <Pad Id="GREr3W2ALZuMOhjFEKJkKo" Comment="Decimation" Bounds="380,222,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -339,14 +330,6 @@
             <Pin Id="Qt9SRG7Mo9YMEXNYRvCr4k" Name="Enabled" Kind="InputPin" />
             <Pin Id="HFagFZC6RfNN5Sp3ncSGHO" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KXUo4IUlPICLUmnLtFv7R7" Comment="" Bounds="322,428,52,43" ShowValueBox="true" isIOBox="true" Value="0.001, 0.001, 0.001">
-            <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Vector3" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:precision p:Type="Int32">3</p:precision>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="OBf4uhw6944MCYyTxqhgHw" Name="Create" />
         <Patch Id="NxXLTAkwOx1ORJkHfOqfie" Name="Update" />
@@ -363,19 +346,16 @@
         <Link Id="E5SfYn5Qng1Mqu42OimTqc" Ids="Qq6QWczxoUoOieSF4Vf0PW,DKkvB7sRAfsNrFB85UTLNO" />
         <Link Id="NBtGscTvLxFQIbj2gk9a6j" Ids="RLNrAzcDnP6MDyDD88sVNO,BpkHr9NzmsrP4N60xDWORh" />
         <Link Id="F4Z0bblInFDPGNOKy5D9NU" Ids="UdWdzIvEVLyLzQqrxCDqmN,DGfkYPw0TB2OnHzHQmszdy" />
-        <Link Id="Lzx0TVVTpHeQDjcvgoROdj" Ids="OC5UHllnjKSMbv46lg9CmB,ITfGIfGLwzHMslUIP8SM4r" />
         <Link Id="KX4F1JNUk1POIarS7WzSIq" Ids="UBW8b29shqoM7mIApeAsS5,UljIT0PaZKeOfB1wQ63Jzm" />
-        <Link Id="VNfjdyIkuCxMwtiVtvp8P3" Ids="FTvjnFp1Kv5OAXngHoVDkj,FhnX4oEeeIJNxv8IIKDJeX" />
         <Link Id="N1FHguSMfywOEsbaNnbCpa" Ids="VPVAuWTwo2hN608tdgzv4K,C33Ja4usZekNTtI9twMYyI" />
         <Link Id="OV64ApokqOBLCKvuuUyzq5" Ids="U2QdrUG4vJFPTkyN6acyNY,F5LWKQuit2qNRCKsd2q0nZ" />
         <Link Id="KRQCLFufmPHLJmL45xeVvx" Ids="HFagFZC6RfNN5Sp3ncSGHO,OGJoKRz6ipMLxCEWgej2Js" />
-        <Link Id="GkBa9iVYOazOca85qvaqfF" Ids="KXUo4IUlPICLUmnLtFv7R7,Sjkb7xKnzcrL6ZQfxet85a" />
+        <Link Id="OzVwGqnTgLCLIBfFFunmyB" Ids="JBplAuIYKbSLJNBAxL8b4T,FhnX4oEeeIJNxv8IIKDJeX" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="UNOp1Uu8RDFPXvAXfKqZ47" Location="VL.Skia" Version="2020.1.0" />
   <NugetDependency Id="GHpVFfqOwayPopzs29fMqy" Location="VL.CoreLib" Version="2020.1.0" />
-  <NugetDependency Id="AUGBk901L8VOXzw5byTJr9" Location="VL.EditingFramework" Version="2020.1.0" />
   <NugetDependency Id="CujxiVsbnmpLoSlyM0oN3n" Location="VL.Devices.NuiTrack" Version="0.0.0.0" />
   <NugetDependency Id="U98q7v2PBvcP5vzK579zef" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>

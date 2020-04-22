@@ -16,7 +16,7 @@
       <Patch Id="BtGGrtvxpAZP3Rk8sJhEQI">
         <Canvas Id="F0wvvQ90LXTPrS2tcgIZAV" CanvasType="Group">
           <Node Bounds="260,181,55,19" Id="RxGZUK3w86hPlmNyLKs73f">
-            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Nuitrack" />
             </p:NodeReference>
@@ -34,7 +34,7 @@
             <Pin Id="UEaGD9bzwRwPa3O6zVyfIS" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="260,242,60,19" Id="G59o0mjCzRFORGYCxpZEGF">
-            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Skeletons" />
             </p:NodeReference>
@@ -55,7 +55,7 @@
               <Patch Id="EC2cezOLwDlMItWPQdNiYL" Name="Update" ManuallySortedPins="true" />
               <Patch Id="FtkCzW4NkKyLNcVF0wCumq" Name="Dispose" ManuallySortedPins="true" />
               <Node Bounds="260,413,65,19" Id="BfOuaSQY7YPOGcfuoHoUah">
-                <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Stickman" />
                 </p:NodeReference>
@@ -67,16 +67,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="VL73nuN7xEWPCbl2kwJkFD" Bounds="445,680,371,19" ShowValueBox="true" isIOBox="true" Value="You can access all Skeleton and Joint data using these nodes:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="220,677,145,19" Id="FtUsJQA5qyGOrj9dFnJcRS">
+          <Node Bounds="220,753,145,19" Id="FtUsJQA5qyGOrj9dFnJcRS">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -98,7 +89,7 @@
             <Pin Id="Lt9sWATQZsSPGkaHCikZny" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="M9id3phuXAwMpfkdkmptAi" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="240,640,105,19" Id="TCPheE155SAPubKOxknr08">
+          <Node Bounds="240,716,105,19" Id="TCPheE155SAPubKOxknr08">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Camera (Orbit)" />
@@ -112,7 +103,7 @@
             <Pin Id="U1CeVnlqouhOJ61aBz0ewx" Name="Output" Kind="OutputPin" />
             <Pin Id="IZRkkPywQueOJx1wb259OZ" Name="Idle" Kind="OutputPin" />
           </Node>
-          <Node Bounds="240,602,45,19" Id="BDroYUch2FJQRrrZghegrx">
+          <Node Bounds="240,678,65,19" Id="BDroYUch2FJQRrrZghegrx">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
@@ -124,7 +115,7 @@
             <Pin Id="Cql4Ua3oCqfQavChRYnk1w" Name="Enabled" Kind="InputPin" />
             <Pin Id="UXAKgpii6vMPo619gchsVh" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="69,563,145,19" Id="PiyaHqtAgWoLj0pqfwDAVt">
+          <Node Bounds="69,639,145,19" Id="PiyaHqtAgWoLj0pqfwDAVt">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AxisAndGrid" />
@@ -142,7 +133,7 @@
             <Pin Id="HV1bgzKjyw6MUBHhdClpGs" Name="Enabled" Kind="InputPin" />
             <Pin Id="O1auyf40QCHM2twlvtaMo3" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="260,545,44,19" Id="QHqCDPDpb6INPcLli9yrOH">
+          <Node Bounds="260,621,44,19" Id="QHqCDPDpb6INPcLli9yrOH">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
@@ -153,14 +144,14 @@
             <Pin Id="Szb6jQeItAvN5jiiyEBZHn" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="446,241,45,19" Id="KtMOUbXdWLWMLQIMZ6y9qv">
-            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.NuiTrack.vl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Hands" />
             </p:NodeReference>
             <Pin Id="V2GuIu7HLvGNui3ze2TlQm" Name="Device" Kind="InputPin" />
             <Pin Id="HLsU2uAG0kyM6XrERhKcsO" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="434,386,169,92" Id="LnItDkDQ71XMTODnDDS3jI">
+          <Node Bounds="434,386,189,126" Id="LnItDkDQ71XMTODnDDS3jI">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -171,7 +162,7 @@
               <Patch Id="NkipDshHUWHPYmnhfCrsiI" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Fv4BMBd1POZQCQipgN5hEC" Name="Update" ManuallySortedPins="true" />
               <Patch Id="QZpFCFk3rXaMoLCZivlMzB" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="446,425,145,19" Id="ES2Di1LKDKQLJxPIfT4CHj">
+              <Node Bounds="446,416,145,26" Id="ES2Di1LKDKQLJxPIfT4CHj">
                 <p:NodeReference LastCategoryFullName="Devices.Nuitrack.UserHands" LastSymbolSource="VL.Devices.Nuitrack.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -187,11 +178,25 @@
                 <Pin Id="VZzOShyb6HBQE0RFsOritI" Name="Right Pressure" Kind="OutputPin" />
                 <Pin Id="ANMb0w7onf5LAzUbB1QdR4" Name="Right Click" Kind="OutputPin" />
               </Node>
+              <Node Bounds="446,466,39,19" Id="OqFkpEJaCTiOoBamQDmD9h">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Cons" />
+                  <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="IMcpZsrecYGL3cI1q8YyUJ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GOLtMt1FdcAOPg1OnVh4ph" Name="Input 2" Kind="StateInputPin" />
+                <Pin Id="OiSLlxeO0zJMcZTpKZ2T30" Name="Result" Kind="OutputPin" />
+              </Node>
             </Patch>
             <ControlPoint Id="UzSRXrBfujlQOBD0zulERj" Bounds="448,393" Alignment="Top" />
-            <ControlPoint Id="ATbIDyFE281OL14nxljNOp" Bounds="448,472" Alignment="Bottom" />
+            <ControlPoint Id="ATbIDyFE281OL14nxljNOp" Bounds="448,503" Alignment="Bottom" />
+            <ControlPoint Id="AMlHc4oXHP7NmJF27RZaj5" Bounds="522,506" Alignment="Bottom" />
+            <ControlPoint Id="QW3UsHBk1eYPbBQbwAXzQf" Bounds="592,506" Alignment="Bottom" />
+            <ControlPoint Id="QlMAykYvRIKMzDbWrYFCAm" Bounds="606,506" Alignment="Bottom" />
+            <ControlPoint Id="EZ6AbkgnKpqNXw0mRF8rcY" Bounds="557,506" Alignment="Bottom" />
           </Node>
-          <Node Bounds="446,535,85,19" Id="MLXwiwZaXflOjkjvkd86ks">
+          <Node Bounds="446,646,85,19" Id="MLXwiwZaXflOjkjvkd86ks">
             <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Layers" LastSymbolSource="VL.Skia3d.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points" />
@@ -206,6 +211,19 @@
             <Pin Id="QZFmQVe38HgPZTLDrhDF6l" Name="Enabled" Kind="InputPin" />
             <Pin Id="VTVHrPRzeD4LrX30arjfxK" Name="Output" Kind="StateOutputPin" />
           </Node>
+          <Node Bounds="446,616,16,19" Id="JQbqbDxWGF1OLl4apguFoA">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Flatten" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="S98OFVNbwxLN3mOBfV3AJT" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MsHfpxvTJI5NehtS85e8xE" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="OulL1zG4x8BObP91UL3SUo" Comment="" Bounds="522,556,35,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LeL9f1VOKbZOu2q0FyHHcL" Comment="" Bounds="692,574,35,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ljda08K5z6XMWoYzVCU383" Comment="" Bounds="787,573,35,34" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UAVXJBrokbjNVxMAmThZsm" Comment="" Bounds="592,555,35,34" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="PezHqATNMeFLTtksi4UNfQ" Name="Create" />
         <Patch Id="CDQZ9HZLn4IOcjLct4UiIb" Name="Update" />
@@ -225,9 +243,20 @@
         <Link Id="NVbI37IoeNML33haVeKUaJ" Ids="UEaGD9bzwRwPa3O6zVyfIS,V2GuIu7HLvGNui3ze2TlQm" />
         <Link Id="RXaovme0GxPNdoJbkbSshT" Ids="HLsU2uAG0kyM6XrERhKcsO,UzSRXrBfujlQOBD0zulERj" />
         <Link Id="VEDeXBZC223NAJ9rpVgSjC" Ids="UzSRXrBfujlQOBD0zulERj,BBMnAMEjgGvMIQu1Htfqs0" />
-        <Link Id="LhUqPBpSD0BOxuVjqirdnd" Ids="AnEZE5l1PlQNhkPwqlij9N,ATbIDyFE281OL14nxljNOp" />
-        <Link Id="FgwvgYISq6pNKj2tXq3nxI" Ids="ATbIDyFE281OL14nxljNOp,I6MwwUt1KesNKJuKh1bU9X" />
+        <Link Id="FgwvgYISq6pNKj2tXq3nxI" Ids="ATbIDyFE281OL14nxljNOp,S98OFVNbwxLN3mOBfV3AJT" />
         <Link Id="TWdYdiB4h7vLhPIJOrsdI8" Ids="VTVHrPRzeD4LrX30arjfxK,J4mIGQcdwh1LB1imnjcCBp" />
+        <Link Id="HvnQUtmsf3fPblMFKKVcu7" Ids="AnEZE5l1PlQNhkPwqlij9N,IMcpZsrecYGL3cI1q8YyUJ" />
+        <Link Id="TOUpiYnlbCUME2YWEgDi0K" Ids="E8viJdhHsAhMDZAxTlXPtL,GOLtMt1FdcAOPg1OnVh4ph" />
+        <Link Id="RDHwLyfpUHkNOuUucYWdD5" Ids="OiSLlxeO0zJMcZTpKZ2T30,ATbIDyFE281OL14nxljNOp" />
+        <Link Id="FNDgjEKSUGzNByeHfcwfiQ" Ids="MsHfpxvTJI5NehtS85e8xE,I6MwwUt1KesNKJuKh1bU9X" />
+        <Link Id="V7zAJi7d4O3LNc7MtGU0Fl" Ids="L24a6ySyqHfLWR3Jc0JSTh,AMlHc4oXHP7NmJF27RZaj5" />
+        <Link Id="JAmR1blaRI6QT2PomnWL3D" Ids="AMlHc4oXHP7NmJF27RZaj5,OulL1zG4x8BObP91UL3SUo" />
+        <Link Id="B4CXNIPJxRAOUgDUzdwA0r" Ids="VZzOShyb6HBQE0RFsOritI,QW3UsHBk1eYPbBQbwAXzQf" />
+        <Link Id="TMB0CIGdAeNNeOuoiWIB6S" Ids="QW3UsHBk1eYPbBQbwAXzQf,LeL9f1VOKbZOu2q0FyHHcL" />
+        <Link Id="Ejvre9vJdPrL8nl4gQI5On" Ids="ANMb0w7onf5LAzUbB1QdR4,QlMAykYvRIKMzDbWrYFCAm" />
+        <Link Id="HD160aK4mUwLmuE1RjNZ1S" Ids="QlMAykYvRIKMzDbWrYFCAm,Ljda08K5z6XMWoYzVCU383" />
+        <Link Id="SKho1xfZPX3LkpIjoISvaE" Ids="B7YPiTBYiTxLDOreNHRSPw,EZ6AbkgnKpqNXw0mRF8rcY" />
+        <Link Id="UCD45BX0NM7LN0ReUEgQO2" Ids="EZ6AbkgnKpqNXw0mRF8rcY,UAVXJBrokbjNVxMAmThZsm" />
       </Patch>
     </Node>
   </Patch>

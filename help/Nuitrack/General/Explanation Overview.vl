@@ -95,9 +95,6 @@
             </p:NodeReference>
             <Pin Id="RTbxDxxXrlrNqN4tuRnkQX" Name="Device" Kind="InputPin" />
             <Pin Id="Ug8lfuUiLzXPY2FgkvA1qb" Name="Output" Kind="OutputPin" />
-            <Pin Id="JamyNyVcOCnOuEsH1NDRaj" Name="Users" Kind="OutputPin" />
-            <Pin Id="BDIUIsumCALLlYLgDSa53y" Name="Floor" Kind="OutputPin" />
-            <Pin Id="SLY0w1KjBmjNksLcsXSoQ2" Name="Floor Normal" Kind="OutputPin" />
           </Node>
           <Pad Id="BCr6SCdDLRKLhXw3dshtno" Comment="Player Colors" Bounds="643,556,20,136" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
@@ -122,8 +119,6 @@
               <Item>0.415398, 0, 0.67, 1</Item>
             </p:Value>
           </Pad>
-          <Pad Id="NXevt5NmuJhNrGJIJPSwP4" Comment="Floor" Bounds="887,498,63,58" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TLcLEMpoo7UNrodoj3lfdG" Comment="Floor Normal" Bounds="1000,498,63,58" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="799,582,44,19" Id="C9WUUGy3WiRNe5pkRTLGLp">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -367,11 +362,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="EHTbpnqjoBDMaheoZa25x1" Bounds="695,498" />
-          <Node Bounds="893,334,101,19" Id="RdeI0LIoGuvLtgLr67473B">
+          <Node Bounds="893,334,-27,19" Id="RdeI0LIoGuvLtgLr67473B">
             <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CameraParameters" />
+              <Choice Kind="ProcessAppFlag" Name="FOV" />
             </p:NodeReference>
             <Pin Id="J7B1qPj4eBIQHDcg6eesPQ" Name="Device" Kind="InputPin" />
             <Pin Id="OAFN3oxJIp3OUHUwD6N09D" Name="Color FOV" Kind="OutputPin" />
@@ -387,11 +381,19 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="RhL1BhZuCzkO68S5LUK27a" Comment="Color FOV" Bounds="923,390,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RhL1BhZuCzkO68S5LUK27a" Comment="Color FOV" Bounds="891,392" ShowValueBox="true" isIOBox="true" />
           <Pad Id="KSOc2IuvlcEQDgu2wTCgyJ" Comment="Position" Bounds="924,756,35,43" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Vg1N9v4Eki3QYuyWLXOyd7" Comment="Bounding Box" Bounds="1122,792,42,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Vg1N9v4Eki3QYuyWLXOyd7" Comment="Bounding Box" Bounds="1122,792,137,36" ShowValueBox="true" isIOBox="true" />
           <Pad Id="KiLonKWuslzMxjFxmhZh8Y" Comment="Occlusion" Bounds="1196,724,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="OjH62W4UgI1OIPE2fTzuQJ" Comment="Projected Position" Bounds="1024,757,35,43" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="766,402,42,19" Id="IhkibPbF81cPj5Cl1s92qo">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Users" />
+            </p:NodeReference>
+            <Pin Id="AtcpTrm6G0nQEvxEzatx6h" Name="Device" Kind="InputPin" />
+            <Pin Id="Kw3MIo1cQjiPqmURAzJiAI" Name="Users" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="PezHqATNMeFLTtksi4UNfQ" Name="Create" />
         <Patch Id="CDQZ9HZLn4IOcjLct4UiIb" Name="Update" />
@@ -400,11 +402,7 @@
           <Fragment Id="FU499SennveMurBEPvVkpK" Patch="CDQZ9HZLn4IOcjLct4UiIb" Enabled="true" />
         </ProcessDefinition>
         <Link Id="VSbOeL61xB1QBkFwNHVBJq" Ids="LvAzsIQTCmqLNIj6RyMStp,HBSta7pKMNXNNn3TinikKZ" />
-        <Link Id="UcGb1FBVrQvQUS7NKbyZ9Y" Ids="BDIUIsumCALLlYLgDSa53y,NXevt5NmuJhNrGJIJPSwP4" />
-        <Link Id="OGiwA34Xg1HPRhLrvSW1aq" Ids="SLY0w1KjBmjNksLcsXSoQ2,TLcLEMpoo7UNrodoj3lfdG" />
-        <Link Id="DtiowJhynR1MoP5E3w8XQI" Ids="JamyNyVcOCnOuEsH1NDRaj,ATsD9uDhlCOMoWKPkO3mda" />
         <Link Id="DMgnVWI63j9LuLoeXV9GHg" Ids="B6Lj2hxoxcHOAWf9iHU81o,MbvozsUzalAMkTRo4YZdwk" />
-        <Link Id="IVWu3zJQj7AMEC0k9QvC0a" Ids="JamyNyVcOCnOuEsH1NDRaj,EHTbpnqjoBDMaheoZa25x1,InL6FzKBmNPLqT3oSrfWBp" />
         <Link Id="LMZf9D0PPcfNR2QZb1RN7S" Ids="P65vcfm5AMsMLqMjDPQR3n,VGLuuSZwYrmNWIU875bfD6" />
         <Link Id="BSgO2VlJQRELavJJhVf2Xr" Ids="FcC9eEU48BgLVJdsuaTFw1,Du6VdNUwigZNeBgFogrIyi" />
         <Link Id="G0NZxMmehEVPT0sIoGa5Wm" Ids="OHLVRjPIlbcOtzfua7DmlG,AWIZMIfxRIqPUcD3xYMLD1" />
@@ -432,6 +430,9 @@
         <Link Id="NE7OmXohd8tMoPgNVwOnJj" Ids="OO5XlsUVTVNN7xiMVVYece,KiLonKWuslzMxjFxmhZh8Y" />
         <Link Id="ChTKx6bF4w7NRMA0JY1VKG" Ids="Prhc9w5orESO792ar7rkdl,OjH62W4UgI1OIPE2fTzuQJ" />
         <Link Id="IS9yelYMjDENMv9roBfzaM" Ids="RzVd2o11COwLCkmDfaiJjy,Hc6QEwPEFimQJbtnYyYLW6" />
+        <Link Id="QbeoufzWTw1MRPNGmwFgV4" Ids="TR130B9bxJDPXT4OdmAMgf,AtcpTrm6G0nQEvxEzatx6h" />
+        <Link Id="TwFvufpRSYMNndZRgV4b01" Ids="Kw3MIo1cQjiPqmURAzJiAI,ATsD9uDhlCOMoWKPkO3mda" />
+        <Link Id="JhkBLn6J3sLMqAIz14ILWI" Ids="Kw3MIo1cQjiPqmURAzJiAI,InL6FzKBmNPLqT3oSrfWBp" />
       </Patch>
     </Node>
   </Patch>
