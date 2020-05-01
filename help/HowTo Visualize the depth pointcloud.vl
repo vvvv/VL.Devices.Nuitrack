@@ -16,7 +16,7 @@
           <Canvas Id="NXRHdQaiLsgQIeOTNfEqLv" CanvasType="Group">
             <ControlPoint Id="Ogbxxt9tkVhPJZX5yAzwFQ" Bounds="223,472" />
             <Node Bounds="221,405,75,19" Id="BYn06zHdVBSPQ52Ab9g1CK">
-              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Visualize Depth Point Cloud.vl">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Visualize the depth pointcloud.vl">
                 <Choice Kind="ProcessNode" Name="ProjectPoints" />
               </p:NodeReference>
               <Pin Id="NCrVxJnACAuNadL1YwGYeE" Name="Input" Kind="InputPin" />
@@ -237,6 +237,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PointCloud" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="RU2eIYrRFIZOVBxz5wlW68" Name="Device" Kind="InputPin" />
             <Pin Id="DKkvB7sRAfsNrFB85UTLNO" Name="Minimum Z" Kind="InputPin" />
             <Pin Id="BpkHr9NzmsrP4N60xDWORh" Name="Maximum Z" Kind="InputPin" />

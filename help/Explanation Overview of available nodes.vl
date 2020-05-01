@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="UOWYOygckqsODlkddXkKiP" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="NkxBtTr8hOoNigSpbcTFdR" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="APFBYc3ryadNMXCUycaQDK">
+    <Canvas Id="VZxxHWhqYjuLlXlvDdCXIG" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="PNbg63iTMIGMWpKhKkhEUl">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PFfDaLRccY9PbWwk3Oc9Yz">
+        <Canvas Id="NrbeJxw6AQVLIXfi6tseMO" CanvasType="Group">
+          <Node Bounds="79,253,55,19" Id="SUCg21NZ9mzM9jjNovNYDe">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Nuitrack" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="SoBipF8U0wdP2GagNz4Kmb" Name="Mirror Image" Kind="InputPin" />
+            <Pin Id="ATZXyP6lrlLLrRiIz6R7AG" Name="Number of Users to Track" Kind="InputPin" />
+            <Pin Id="LXp3qDKJG6rNPS0Ba68iod" Name="Enabled" Kind="InputPin" />
+            <Pin Id="K1Grrr2CgCdOjKwDlkBW7x" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="168,380,69,19" Id="BXZj28suNmNNzNSQj1yoZw">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="PYgw79V4QSCMbhjKWDwGsW" Name="Device" Kind="InputPin" />
+            <Pin Id="Grydrv0UWUcLjj5yHyfjQy" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="344,380,66,19" Id="Cik2nfDP7gKMfQX08EloKl">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BodyImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="UOdEwjYj4q3LYL2611M1L7" Name="Device" Kind="InputPin" />
+            <Pin Id="CFH2CdodJLBOIXGlmUr7nQ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="243,380,71,19" Id="HN51jgRV1wyOe5jVU1tPIr">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="UyI3iqyZyF5QDEcUOO8WdF" Name="Device" Kind="InputPin" />
+            <Pin Id="ETUvRYMKDZAPJde9zt798P" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VGBupwmyQQaOFSCVniCvON" Bounds="422,389,230,172" ShowValueBox="true" isIOBox="true" Value="&lt; These return images&#xD;&#xA;&#xD;&#xA;They are also available as &quot;Reactive&quot; versions in the nodebrowser if you enable &quot;Advanced&quot; nodes. &#xD;&#xA;&#xD;&#xA;The reactive versions allow you to apply computations to the images in a background thread.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="711,355,35,19" Id="VPvdPbyv7olNMwx2FJfubt">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FOV" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="QlizoBt1JbPOdlI0dd5SjM" Name="Device" Kind="InputPin" />
+            <Pin Id="P4aCIcJ2Ew5PJL2Xy4MIoX" Name="Color FOV" Kind="OutputPin" />
+            <Pin Id="P7H1n46bu30MgCaANUk37Z" Name="Depth FOV" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="79,668,60,19" Id="OvZnBdPhx3nNkVqCChyRZW">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Skeletons" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="KeWSlH8HbckMaIQKxr6hlO" Name="Device" Kind="InputPin" />
+            <Pin Id="M9L4LZGd6BMOjJf7o64rGX" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="115,507,66,19" Id="ES7HeHJfLilMeFxNb0igh7">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PointCloud" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="Jm9aVOIBv8EMBnBQWUu5Yu" Name="Device" Kind="InputPin" />
+            <Pin Id="RPbpn5UxNA9M162gHRvzJX" Name="Minimum Z" Kind="InputPin" />
+            <Pin Id="EsfDOly8l2DNVV4xOUf1cq" Name="Maximum Z" Kind="InputPin" />
+            <Pin Id="Ra5y9xrjgMtNTtiZpavMXK" Name="Decimation" Kind="InputPin" />
+            <Pin Id="HqwtDcueippP8pC1U9b5gz" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="52,775,198,140" Id="OQ83zUyO0xtMpOkF1ZURjh">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="GhWjptzfO4uM88r9nqFMsa" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="Iw8yQKJv8jNPwlUq7oQrhP" Bounds="81,782" Alignment="Top" />
+            <Patch Id="MPUqskyXe9pPuMSJ5YYGaR" ManuallySortedPins="true">
+              <Patch Id="Us1ufxh5JiENAIxNkCTdFn" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="JukACXusuSYMBmn0lNTogL" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="O0YwHX7eqhBOn3AcNYSOYB" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="153,829,85,26" Id="OTYkg7SKBHgOQnf4SkVwea">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Skeleton" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                  <CategoryReference Kind="ClassType" Name="Skeleton" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="TsgZnSf86qrLqIX7LLGSD3" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NCG4wCxYvSaLbc4TQVMbjh" Name="ID" Kind="OutputPin" />
+                <Pin Id="PMRzcI2A6i9NxzJouuF3K6" Name="Joint Positions" Kind="OutputPin" />
+                <Pin Id="FdxRXqks9KAPF1UKUaSqgZ" Name="Joint Orientations" Kind="OutputPin" />
+                <Pin Id="CkcQkxbHAciOTkFYhLby92" Name="Joint Types" Kind="OutputPin" />
+                <Pin Id="JqGFCCfnazRMoOiCToM4E5" Name="Joint Confidences" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="64,829,65,19" Id="VCIJxJaJzCPLo6PFC6OxX0">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Stickman" />
+                </p:NodeReference>
+                <Pin Id="ALaSoIl3JbDL5pRjWivLpb" Name="Input" Kind="InputPin" />
+                <Pin Id="QsihNalHeNQOzptJ6LqDcc" Name="Color" Kind="InputPin" />
+                <Pin Id="EMAxX48sGGiLHvAeYw5i3f" Name="Stroke Width" Kind="InputPin" />
+                <Pin Id="N7JLTuT1QITNTd2BvB1bw2" Name="Enabled" Kind="InputPin" />
+                <Pin Id="PWUFvqcUdLCNVWUX09AUZ6" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="64,876,125,19" Id="GVqlCvQRWeaQRAte11p2Ly">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Boxman" />
+                </p:NodeReference>
+                <Pin Id="Lz8RdJmiZlFPwvA081yCsP" Name="Input" Kind="InputPin" />
+                <Pin Id="MVVugS3m1WYQSxWs7rjwSV" Name="Color" Kind="InputPin" />
+                <Pin Id="GN0UDUlwQpKPkbbV31EIXw" Name="Stroke Width" Kind="InputPin" />
+                <Pin Id="Gh8kqPotNWNMS5itRNc7Sy" Name="Show Boxes" Kind="InputPin" />
+                <Pin Id="BPyrcyk6w06MU8LMUM0nTL" Name="Show Axis" Kind="InputPin" />
+                <Pin Id="BrfKhWxQgwYO5mctY1HfdC" Name="Show Labels" Kind="InputPin" />
+                <Pin Id="J3X6TCwxNdSQIEuQVbzCFK" Name="Enabled" Kind="InputPin" />
+                <Pin Id="VIlsJDGaMCtPtkfSmztwtS" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="RppEqdygmfzMRhsbqqOHlT" Bounds="141,676,142,39" ShowValueBox="true" isIOBox="true" Value="&lt; Returns a spread of detected skeletons">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CyoGW6MV4hTOtqJZ2R3LoE" Bounds="186,514,173,99" ShowValueBox="true" isIOBox="true" Value="&lt; Returns a spread of 3d points in world position. This is a rather slow node, meant mostly for quick debugging. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V1mgp5iGb40QO0M01QjApr" Bounds="68,105,150,19" ShowValueBox="true" isIOBox="true" Value="https://nuitrack.com/">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Es2l2awuf3nL78e9dRhtne" Bounds="68,88,206,19" ShowValueBox="true" isIOBox="true" Value="Requires a license available from:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R1LCRrRiMVjNAeLX8NTzoZ" Bounds="755,363,159,62" ShowValueBox="true" isIOBox="true" Value="&lt; Provides field of view for both color and depth sensors">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RCpbRxBe10VPbGDgCAWMbV" Bounds="179,256,418,60" ShowValueBox="true" isIOBox="true" Value="&lt; As of now Nuitrack can only handle one device. &#xD;&#xA;Additional configurations are available via: &#xD;&#xA;C:\Program Files\Nuitrack\nuitrack\nuitrack\data\nuitrack.config">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="573,668,42,19" Id="EUJlCMbdg7zOq0ILLelvd3">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Users" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="UVkcqzV1TE1M3XW6He2kr7" Name="Device" Kind="InputPin" />
+            <Pin Id="TsHg1N9QERkQXuiOOvfpx8" Name="Users" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="561,775,109,86" Id="QNRM6eTQ0hDLmjLGqfnM8R">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="LZb40298C16NLKU9vOJzRS" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="CJHI4pPyM9VOtxvPov8ioj" Bounds="575,781" Alignment="Top" />
+            <Patch Id="EuK0XNetwkwO8Cq7mJz4x4" ManuallySortedPins="true">
+              <Patch Id="C8cAXjJOfBLLEITIl55EUX" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="HW29Tt3pOunNK2J0LOdIci" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="QIW6nWfNpEoQRBC37Er6Jw" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="573,809,85,26" Id="QXK7TaMWyetOdyjUs1RpQk">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.User" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                  <CategoryReference Kind="ClassType" Name="User" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="A0QS1nouiBQMLLEClIwwrT" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NzzaBBNU8IdOQp1sXLBIj3" Name="ID" Kind="OutputPin" />
+                <Pin Id="OyT5Gyc9BXfNzfG8rFEcuq" Name="Position" Kind="OutputPin" />
+                <Pin Id="M1cki95jrFUQWRMfSMTF2z" Name="Projected Position" Kind="OutputPin" />
+                <Pin Id="IG5TJ6fi3dFP6giAme5Tx7" Name="Bounding Box" Kind="OutputPin" />
+                <Pin Id="KXQ8lM7NKx3LX9tJuxhTsq" Name="Occlusion" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Node Bounds="824,668,45,19" Id="TI50Ih9u3EwOEfXs4oYnlV">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Devices" />
+              <CategoryReference Kind="Category" Name="Nuitrack" />
+              <Choice Kind="ProcessAppFlag" Name="Hands" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="I0Q94KzFQDDNKIpJbGtqxS" Name="Device" Kind="InputPin" />
+            <Pin Id="K0Ed0YIpr5UNYQIhkRT4xo" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="572,937,59,19" Id="MsqN6KhvQf0Pe21yJmNO1U">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Instances" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
+            <Pin Id="PatwtmrZdizLpLeEgQsDpK" Name="Update Rate" Kind="InputPin" />
+            <Pin Id="N6pJbW06znTOTeWstL7RmD" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="711,475,39,19" Id="GlmTEyFq4ySMcSplDaIISc">
+            <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Floor" />
+              <FullNameCategoryReference ID="Devices.Nuitrack" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Uqwzk1EM9O3MXNFtPhsqct" Name="Device" Kind="InputPin" />
+            <Pin Id="I8UTBHThqjdNddlKky1tQK" Name="Floor" Kind="OutputPin" />
+            <Pin Id="TEqVbi9aUQaMuBuTUXbItM" Name="Floor Normal" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="812,781,189,86" Id="KkWjtbt0SrCOXBMjOZRgFy">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="GeTOXIW0MnpP6cK6qbaNOb" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="Bjwm3qAblIgOMv5GfgYqSI" Bounds="826,788" Alignment="Top" />
+            <Patch Id="NOBZPfxEWXKOyNQ58UZPYl" ManuallySortedPins="true">
+              <Patch Id="Kq7IlD0FEZyMr1jYcGTBJU" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="N2SZk0FGUYLN3p0WHXcBKA" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="Af85atPp5mtP2p1cImRxnm" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="824,814,165,26" Id="TeEFbQdP98sMSfMhWUiXWQ">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.UserHands" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="UserHands" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="P1EFVR1JiplMJvCwQrLUu2" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Cf4HRflj2WFMPM7FEj7yQy" Name="User Id" Kind="OutputPin" />
+                <Pin Id="TtRLpJlim9PQYMUasAkrzP" Name="Left Hand Position" Kind="OutputPin" />
+                <Pin Id="FL2RrtuXbdGP58V4HQB4Yp" Name="Left Normalized Position" Kind="OutputPin" />
+                <Pin Id="PbhfWvLbKErLUsMDiz2xCi" Name="Left Pressure" Kind="OutputPin" />
+                <Pin Id="LCj36ZtHzxjNabEFQnlnXf" Name="Left Click" Kind="OutputPin" />
+                <Pin Id="Kz98uiCwvGxO9mgCv05HNa" Name="Right Position" Kind="OutputPin" />
+                <Pin Id="Dw2QfGQtXRvNIitswk05oX" Name="Right Normalized Position" Kind="OutputPin" />
+                <Pin Id="U6vzNxsKjGyLIlLYgu0QX5" Name="Right Pressure" Kind="OutputPin" />
+                <Pin Id="LKTlFCNwI3CL065byxhwrI" Name="Right Click" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="Gx2BaXlIBdTO6tcC9WkPHI" Bounds="616,676,153,39" ShowValueBox="true" isIOBox="true" Value="&lt; Returns a spread of detected users">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R4SPN2KpSbiO9zEuPnj8rN" Bounds="871,676,165,39" ShowValueBox="true" isIOBox="true" Value="&lt; Returns a spread of detected hands">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NZ1wIeCovekLY8jA56BC0q" Bounds="677,944,400,23" ShowValueBox="true" isIOBox="true" Value="http://download.3divi.com/Nuitrack/doc/Instance_based_API.html">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="560,969,269,86" Id="AFUDzejiRegLN7vlxUutP9">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="OhE9dvcZicfQC0OEbHArZq" Name="Break" Kind="OutputPin" />
+            <Patch Id="TI3naDHE6m3MOsUvwpzu50" ManuallySortedPins="true">
+              <Patch Id="Vo7DPEywvVPLafBoOc8itY" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="TZwmTMmwvKHM2fBQuAVVk4" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="BFBe3rbtDOrLkqd8Lz0g4Z" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="572,1003,245,26" Id="AGheglzwWHrNoYJf8Ibzgm">
+                <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Face" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Face" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="FOXzQ87FYmkMQNknusrAQy" Name="Input" Kind="StateInputPin" />
+                <Pin Id="GS0NswuRrXrNtXb7sAs4rc" Name="Id" Kind="OutputPin" />
+                <Pin Id="PE8wJ53LQkVNiYuzGYb6lY" Name="Class" Kind="OutputPin" />
+                <Pin Id="BYptgELu0qJOTxbbnbJWKK" Name="Rectangle" Kind="OutputPin" />
+                <Pin Id="TfqIbIjfbkzMk5bWWn3WAl" Name="Landmarks" Kind="OutputPin" />
+                <Pin Id="Bn4yk0oUyZVQYE9KKJqYBO" Name="Left Eye" Kind="OutputPin" />
+                <Pin Id="R7GSH2X2fZCOqhDxe9tYmz" Name="Right Eye" Kind="OutputPin" />
+                <Pin Id="ShadIeZMDeDPGAxQw5IM49" Name="Angles" Kind="OutputPin" />
+                <Pin Id="Ucl6X5NYsYdQQk4c0MAT8i" Name="Gender" Kind="OutputPin" />
+                <Pin Id="C5FSvt7AybhNKHnUii68IE" Name="Age" Kind="OutputPin" />
+                <Pin Id="AWYKV8fzW1EMaLPhzLBR8a" Name="Angry" Kind="OutputPin" />
+                <Pin Id="EIfgr0nyhjnMn0uxljlBrV" Name="Neutral" Kind="OutputPin" />
+                <Pin Id="QCqOnJHgujBPfBeD8eqZkW" Name="Surprise" Kind="OutputPin" />
+                <Pin Id="I4phJsDpWLeLIFHeNgpwgb" Name="Happy" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="VGAmai4qCHaQQJu532z3T9" Bounds="574,976" Alignment="Top" />
+          </Node>
+          <Pad Id="Fc3sYdWH9PsNGZ91zsB5L9" Bounds="638,945,36,19" ShowValueBox="true" isIOBox="true" Value="see:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RJU3MX337xiM4lD6cFpvvd" Bounds="654,175,240,23" ShowValueBox="true" isIOBox="true" Value="https://community.nuitrack.com/">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PlaqXjQAq67OBJbKK5aWnF" Bounds="654,154,83,19" ShowValueBox="true" isIOBox="true" Value="User Forum">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TAcGI9xv27wOO1H6yHFvph" Bounds="654,212,124,19" ShowValueBox="true" isIOBox="true" Value="API Documentation">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O8Q6tmh7DzvPnE3sVtXzEH" Bounds="654,234,252,19" ShowValueBox="true" isIOBox="true" Value="http://download.3divi.com/Nuitrack/doc/index.html">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NP5LUh6yfR9NJCy298G6vZ" Bounds="256,823,261,128" ShowValueBox="true" isIOBox="true" Value="&lt; A skeleton can be quickly drawn using Stickman or  Boxman or split into its components using a Split [Skeleton] node.&#xD;&#xA;&#xD;&#xA;Stickman and Boxman require VL.Skia3d for drawing!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FWrYKn8WFfAPCI1LET7VeL" Bounds="70,131,298,63" ShowValueBox="true" isIOBox="true" Value="They have a free license (registration required) that fully works but requires a restart of the app after 3 minutes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Shs0UjbbOruLbRIjdrf2dn" Bounds="755,482,157,44" ShowValueBox="true" isIOBox="true" Value="&lt; Provides a reference floor plane">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PVbVbOGAsC1OMyqjNp9dbd" Name="Create" />
+        <Patch Id="H2XlLgF6scLOXsDx75hd3r" Name="Update" />
+        <ProcessDefinition Id="Q75xfigtNzgOvh7zlq5gns">
+          <Fragment Id="GbhzaHLL7cgP9Aqb7MKI3C" Patch="PVbVbOGAsC1OMyqjNp9dbd" Enabled="true" />
+          <Fragment Id="R56Abdr1Rw3OEfJsdkIY8m" Patch="H2XlLgF6scLOXsDx75hd3r" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="EYP6JjskoE3N8esifs1ZCa" Ids="K1Grrr2CgCdOjKwDlkBW7x,PYgw79V4QSCMbhjKWDwGsW" />
+        <Link Id="Mnj1suZLyOgO1gQztC6Bhy" Ids="K1Grrr2CgCdOjKwDlkBW7x,UyI3iqyZyF5QDEcUOO8WdF" />
+        <Link Id="OmgaPwy0HMLP8eipWuNfCp" Ids="K1Grrr2CgCdOjKwDlkBW7x,UOdEwjYj4q3LYL2611M1L7" />
+        <Link Id="BIRJY0HkoeYLMKJBcwcsn0" Ids="K1Grrr2CgCdOjKwDlkBW7x,KeWSlH8HbckMaIQKxr6hlO" />
+        <Link Id="MHFwYr6cyAYMSlLsvlZHCH" Ids="K1Grrr2CgCdOjKwDlkBW7x,Jm9aVOIBv8EMBnBQWUu5Yu" />
+        <Link Id="ITPNk6pRvJONnrDUNrgl9s" Ids="M9L4LZGd6BMOjJf7o64rGX,Iw8yQKJv8jNPwlUq7oQrhP" />
+        <Link Id="F1TqKaToLpDOxUwmeQWfa2" Ids="Iw8yQKJv8jNPwlUq7oQrhP,TsgZnSf86qrLqIX7LLGSD3" />
+        <Link Id="OY5SauKc5xNLDoDeYCuyjv" Ids="Iw8yQKJv8jNPwlUq7oQrhP,ALaSoIl3JbDL5pRjWivLpb" />
+        <Link Id="UT0RkqTBGX1NLOB0Fz0Hot" Ids="K1Grrr2CgCdOjKwDlkBW7x,UVkcqzV1TE1M3XW6He2kr7" />
+        <Link Id="LMmL92knqXEOMthehpFmmR" Ids="CJHI4pPyM9VOtxvPov8ioj,A0QS1nouiBQMLLEClIwwrT" />
+        <Link Id="FnU936CS4LqNtVP1wah3xC" Ids="TsHg1N9QERkQXuiOOvfpx8,CJHI4pPyM9VOtxvPov8ioj" />
+        <Link Id="VeGbsWx3urKLl1yYUd4Udp" Ids="K1Grrr2CgCdOjKwDlkBW7x,I0Q94KzFQDDNKIpJbGtqxS" />
+        <Link Id="OYXA1FrwWAdLy75fvVhQGy" Ids="K1Grrr2CgCdOjKwDlkBW7x,Uqwzk1EM9O3MXNFtPhsqct" />
+        <Link Id="TYVOi7GWMFOQZ6YnxIGpbr" Ids="K0Ed0YIpr5UNYQIhkRT4xo,Bjwm3qAblIgOMv5GfgYqSI" />
+        <Link Id="RYN8z6GXoGJPjuolbjiksD" Ids="Bjwm3qAblIgOMv5GfgYqSI,P1EFVR1JiplMJvCwQrLUu2" />
+        <Link Id="UMnbInFr3DdN653qJmS4zp" Ids="VGAmai4qCHaQQJu532z3T9,FOXzQ87FYmkMQNknusrAQy" />
+        <Link Id="OBgbc99YQdTMVKL3dXPai1" Ids="N6pJbW06znTOTeWstL7RmD,VGAmai4qCHaQQJu532z3T9" />
+        <Link Id="BJN48SJPKBNLmyhNHGO1uO" Ids="Iw8yQKJv8jNPwlUq7oQrhP,Lz8RdJmiZlFPwvA081yCsP" />
+        <Link Id="AUe3d4mbI1FLePsbQiTjEe" Ids="K1Grrr2CgCdOjKwDlkBW7x,QlizoBt1JbPOdlI0dd5SjM" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="LqN860VbNwDMgtD9a8XgD9" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="HTArdr78ItYNPTLlmSqotS" Location="VL.Devices.NuiTrack" Version="0.0.0.0" />
+</Document>
