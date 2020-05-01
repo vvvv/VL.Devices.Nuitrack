@@ -1,8 +1,11 @@
 # VL.Devices.Nuitrack
 Set of nodes to use the [Nuitrack API](https://nuitrack.com) in VL.
 
+Try it with vvvv, the visual live-programming environment for .NET
+Download: http://visualprogramming.net
+
 ## Using the library
-Ensure you've a recent VL version installed (>= 2019.2-0300).
+Ensure you've a recent VL version installed (>= 2020.1).
 
 ### Nuget installation
 In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://vvvv.gitbooks.io/the-gray-book/content/en/reference/libraries/dependencies.html#_manage_nugets) in the VL documentation. As described there you go to the commandline and then type:
@@ -44,9 +47,7 @@ If you have registered on nuitrack.com but for any reason do not have a key at h
 
 Once you have gone through the steps above and the VL.Devices.Nuitrack nuget is installed and referenced in your VL document you'll see the category "Nuitrack" under "Devices" in the nodebrowser.
 
-VL help patches can be found here:
-
-    "VL.Devices.Nuitrack\help\"
+Demos are available via the Help Browser!
 
 ## Contributing to the development
 If you want to contribute to this repository, clone it into a directory like:
