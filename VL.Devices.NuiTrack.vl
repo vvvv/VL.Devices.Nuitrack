@@ -7034,6 +7034,212 @@
           <Link Id="H8hGg1zqa0HLdWXNxrH6So" Ids="Sr9SrtsEzj8LWhCJe2K4uj,DtULYRJm7GqLtfHTf3IAQQ" />
         </Patch>
       </Node>
+      <Canvas Id="GFZsR0B60i8OY8ETkgBTFk" Name="Experimental" Position="615,219">
+        <!--
+
+    ************************ WorldToColor ************************
+
+-->
+        <Node Name="WorldToColor" Bounds="168,312,304,307" Id="QTFz3kkAWxWMi42U3wMcNo">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="NPkuK65YOELLkDdEn4cShH">
+            <ControlPoint Id="TmmGkoy5yExOIHdLmGWw6S" Bounds="182,330" />
+            <Pin Id="A2bQhzqqpzWPThwFhvIseN" Name="Device" Kind="InputPin" Bounds="589,865" />
+            <Link Id="N0BgCIdLLVTLQRSBDGtGX8" Ids="A2bQhzqqpzWPThwFhvIseN,TmmGkoy5yExOIHdLmGWw6S" IsHidden="true" />
+            <ControlPoint Id="MXyoRD2xpYZOjfKAMMn7jf" Bounds="375,355" />
+            <Link Id="BC8Zjyjzc2tNH58dQtjgxf" Ids="MXyoRD2xpYZOjfKAMMn7jf,ImrqulRPpdjPsGN9ygbN4n" />
+            <Pin Id="CNfPGCFEbccNHqwDdyqu9d" Name="Input" Kind="InputPin" Bounds="746,841" />
+            <Link Id="R8zTAUbkXiePPXgHeS3MQ4" Ids="CNfPGCFEbccNHqwDdyqu9d,MXyoRD2xpYZOjfKAMMn7jf" IsHidden="true" />
+            <ControlPoint Id="BMByCFb4AnJQTnBcu7OyRI" Bounds="229,602" />
+            <Pin Id="AXofDLFQURjNuHZxJN6To4" Name="Output" Kind="OutputPin" Bounds="742,992" />
+            <Link Id="IMpt7hG9DG0MtACTX3f679" Ids="BMByCFb4AnJQTnBcu7OyRI,AXofDLFQURjNuHZxJN6To4" IsHidden="true" />
+            <Node Bounds="180,347,67,26" Id="NkUMLKPmAIbNEF3YSmI7yJ">
+              <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSensors" />
+              </p:NodeReference>
+              <Pin Id="LIAQ9BpdTI9PwjqU2VU6Vj" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UuMjLxxjZX0QAhZ2LqDzek" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="P9GAB3uXeJcOtdCJ8J22Nw" Name="Sensors" Kind="OutputPin" />
+            </Node>
+            <Link Id="Sqkx8hJSOfpOgKawyg1D2L" Ids="TmmGkoy5yExOIHdLmGWw6S,LIAQ9BpdTI9PwjqU2VU6Vj" />
+            <Link Id="Akxyeg7gEhMPxJJgFNARii" Ids="P9GAB3uXeJcOtdCJ8J22Nw,R59uvZkfh5RP9KfRPiojdI" />
+            <Node Bounds="227,398,233,181" Id="Tqw0j3dKKoMNVLznawOhYB">
+              <p:NodeReference LastCategoryFullName="System.Resources" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="OperationCallFlag" Name="Using (Select)" />
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="R59uvZkfh5RP9KfRPiojdI" Name="Input" Kind="InputPin" />
+              <Pin Id="MYM2buFyqknNryw4gDOPSJ" Name="Result" Kind="OutputPin" />
+              <Patch Id="QGXCpvOlwvULD7ItgBoZKD" Name="Extractor" ManuallySortedPins="true">
+                <Pin Id="UuBet1iOSsEPExN2GLVtW9" Name="Input" Kind="InputPin" />
+                <Pin Id="UYlOOH3n778O6crraehBUG" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="IojdlDtPX6kPXfJIr8xYCb" Bounds="241,406" />
+                <ControlPoint Id="HBGYTN0s1ewLPWJzDIWn6Y" Bounds="375,572" />
+                <Node Bounds="246,490,132,26" Id="CLUPuvbH8C8O0SUQ6oQzwO">
+                  <p:NodeReference LastCategoryFullName="nuitrack.DepthSensor" LastSymbolSource="nuitrack.net.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ConvertRealToProjCoords" />
+                    <PinReference Kind="InputPin" Name="this">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="nuitrack" LastSymbolSource="nuitrack.net.dll">
+                        <Choice Kind="TypeFlag" Name="DepthSensor" />
+                      </p:DataTypeReference>
+                    </PinReference>
+                    <PinReference Kind="InputPin" Name="P" />
+                  </p:NodeReference>
+                  <Pin Id="Iq04MMK32lLPGnBLANwCe2" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Gz4huWj8OnPPN58681k4ZD" Name="P" Kind="InputPin" />
+                  <Pin Id="QjObfu1bSMnLyCOCVFCzOE" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="EFQj2fWyn4tL4U3irEob9g" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="373,456,75,19" Id="SRZOUj1tpMuNdaIrOQxzaW">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromVector3" />
+                  </p:NodeReference>
+                  <Pin Id="ImrqulRPpdjPsGN9ygbN4n" Name="Input" Kind="InputPin" />
+                  <Pin Id="UipHCRgK0URPO3tzk5gU38" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="H97jJceUbqrMGHnR1PB8Xg" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="239,429,90,26" Id="VV8hD8w7XEIOnrW5Yy9lrk">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Sensors" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Sensors" />
+                    <Choice Kind="OperationCallFlag" Name="GetDepthSensor" />
+                  </p:NodeReference>
+                  <Pin Id="TzHXlGNh24VNHWuNTLZY14" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NLB1nzETKGiPdZip08Vuvm" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="S1G4gizcTtBM97UkTe0mrd" Name="Depth" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="373,530,63,19" Id="K49452u3HrZL4ob9YALw8F">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToVector3" />
+                    <CategoryReference Kind="Category" Name="Nuitrack" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="Devices" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="J01AgLw3AN0NFGJc1hWGsI" Name="Input" Kind="InputPin" />
+                  <Pin Id="HRKsIMifvxFMDhwFl1uqoa" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="LH3psRMefXNMCo0apRFUGG" Name="Output" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Link Id="CN9eEkedbODNyLAnlCrGvd" Ids="UuBet1iOSsEPExN2GLVtW9,IojdlDtPX6kPXfJIr8xYCb" IsHidden="true" />
+            <Link Id="IsUdhrms0plORVs83qKMXY" Ids="HBGYTN0s1ewLPWJzDIWn6Y,UYlOOH3n778O6crraehBUG" IsHidden="true" />
+            <Link Id="RW1rY6Y7uCkPBlIkDNU08U" Ids="H97jJceUbqrMGHnR1PB8Xg,Gz4huWj8OnPPN58681k4ZD" />
+            <Link Id="JhV336ypY6JMurizZYnyZZ" Ids="IojdlDtPX6kPXfJIr8xYCb,TzHXlGNh24VNHWuNTLZY14" />
+            <Link Id="EDctCxYNDRsPDaxgiaXFfP" Ids="S1G4gizcTtBM97UkTe0mrd,Iq04MMK32lLPGnBLANwCe2" />
+            <Link Id="AC6mS7XxWs7PdDVvrfcsBv" Ids="EFQj2fWyn4tL4U3irEob9g,J01AgLw3AN0NFGJc1hWGsI" />
+            <Link Id="VqD38APhpudNvvZuiAlbEM" Ids="LH3psRMefXNMCo0apRFUGG,HBGYTN0s1ewLPWJzDIWn6Y" />
+            <Link Id="IhrgZzmKdoxLC6ILeRNAVj" Ids="MYM2buFyqknNryw4gDOPSJ,BMByCFb4AnJQTnBcu7OyRI" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ColorToWorld ************************
+
+-->
+        <Node Name="ColorToWorld" Bounds="516,310,304,307" Id="PW2Qb5FZlW6O6mYUOfrt14">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="A4K8oqgPiavMcQWSHDClVz">
+            <ControlPoint Id="KaXgnVgGXctNIFJQTmNmnn" Bounds="530,328" />
+            <Pin Id="LLAjZuQBpK9NcHH7eOuFya" Name="Device" Kind="InputPin" Bounds="589,865" />
+            <Link Id="GQvCF9QfMvUL7tCkOIfC9y" Ids="LLAjZuQBpK9NcHH7eOuFya,KaXgnVgGXctNIFJQTmNmnn" IsHidden="true" />
+            <ControlPoint Id="SgGJROkKdUNLmlQQdIqx39" Bounds="723,353" />
+            <Link Id="SnKceuewP9fP0N9v3bQ74K" Ids="SgGJROkKdUNLmlQQdIqx39,TkiYP6lKqyANyEtE9HFJmt" />
+            <Pin Id="ORaijOkCnnJLJPRJDHcdnX" Name="Input" Kind="InputPin" Bounds="746,841" />
+            <Link Id="HeFfRY5px3nPLC9JwJDyLL" Ids="ORaijOkCnnJLJPRJDHcdnX,SgGJROkKdUNLmlQQdIqx39" IsHidden="true" />
+            <ControlPoint Id="OCagX6Z71h3O7RPUpyBrM1" Bounds="577,600" />
+            <Pin Id="G1Ro0YdtXa2MQp8ZKQFSYI" Name="Output" Kind="OutputPin" Bounds="742,992" />
+            <Link Id="HTNfDmVBicsQa2fE5WrB8T" Ids="OCagX6Z71h3O7RPUpyBrM1,G1Ro0YdtXa2MQp8ZKQFSYI" IsHidden="true" />
+            <Node Bounds="528,345,67,26" Id="AcKeyOLM9FTNtYOpcTHSXk">
+              <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSensors" />
+              </p:NodeReference>
+              <Pin Id="HcUiukjhsvLPznBVnKfTlI" Name="Input" Kind="StateInputPin" />
+              <Pin Id="O80l6StoSn6PCAs2XGlVlx" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="StYkbVhGhDQP6ISxswRTvZ" Name="Sensors" Kind="OutputPin" />
+            </Node>
+            <Link Id="Ht2NYcWzVAoOKEPBZXN6kQ" Ids="KaXgnVgGXctNIFJQTmNmnn,HcUiukjhsvLPznBVnKfTlI" />
+            <Link Id="CwLOneElOtLMU2Q49YP8JZ" Ids="StYkbVhGhDQP6ISxswRTvZ,PFKxk6z9I8bMfGV6wLMJyo" />
+            <Node Bounds="575,396,233,181" Id="MXWQkoav8dsMAWGu77Vbb3">
+              <p:NodeReference LastCategoryFullName="System.Resources" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="OperationCallFlag" Name="Using (Select)" />
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="PFKxk6z9I8bMfGV6wLMJyo" Name="Input" Kind="InputPin" />
+              <Pin Id="L7bSzJq7ai2QFlr1Lrg1w3" Name="Result" Kind="OutputPin" />
+              <Patch Id="H6vLoQaqZAbO0aLz49fuzx" Name="Extractor" ManuallySortedPins="true">
+                <Pin Id="LQtLKiC9qr8NcVgzU4mOZG" Name="Input" Kind="InputPin" />
+                <Pin Id="RTt7HOUjgItQYWx8IgHtm0" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="AVCITonlubFP0mcZ19VEXi" Bounds="589,404" />
+                <ControlPoint Id="IXJlqma0lakNNDvLV6DBHv" Bounds="723,570" />
+                <Node Bounds="721,454,75,19" Id="EzX8Z7FMKZ7NFbA2BNqq85">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromVector3" />
+                  </p:NodeReference>
+                  <Pin Id="TkiYP6lKqyANyEtE9HFJmt" Name="Input" Kind="InputPin" />
+                  <Pin Id="GT65Fwy6j4iNA7ZJWQA8A9" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="H0mjggPLBuENJ5g6MDadhS" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="587,427,90,26" Id="AGuvW03bknwNS6q5U2Ond5">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack.Sensors" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Sensors" />
+                    <Choice Kind="OperationCallFlag" Name="GetDepthSensor" />
+                  </p:NodeReference>
+                  <Pin Id="UE39dP2DZoNOj6oWFfiB18" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="PK6Vy5J7w1ZMKmmmKfLzjW" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="NVzgO8efJJOLgndLFEALib" Name="Depth" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="721,528,63,19" Id="OnNkrKZe661Lx09I2Eh5yB">
+                  <p:NodeReference LastCategoryFullName="Devices.Nuitrack" LastSymbolSource="VL.Devices.Nuitrack.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToVector3" />
+                    <CategoryReference Kind="Category" Name="Nuitrack" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="Devices" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="NIJH30Q87zoLiNAb17BtNJ" Name="Input" Kind="InputPin" />
+                  <Pin Id="VKjwsadajtaP4Gl2la9uXU" Name="Scalar" Kind="InputPin" />
+                  <Pin Id="Pqvnb3kH1ETNCZgypE6r9e" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="594,484,132,26" Id="SK9lys8c3AINPQp4udBDs1">
+                  <p:NodeReference LastCategoryFullName="nuitrack.DepthSensor" LastSymbolSource="nuitrack.net.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <PinReference Kind="InputPin" Name="this">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="nuitrack" LastSymbolSource="nuitrack.net.dll">
+                        <Choice Kind="TypeFlag" Name="DepthSensor" />
+                      </p:DataTypeReference>
+                    </PinReference>
+                    <PinReference Kind="InputPin" Name="P" />
+                    <Choice Kind="OperationCallFlag" Name="ConvertProjToRealCoords" />
+                  </p:NodeReference>
+                  <Pin Id="Hj8QDuVJ0GAOAT0Q8Y5xeA" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HBcxj5qgrLtN54yf3iQDn6" Name="P" Kind="InputPin" />
+                  <Pin Id="G5IrCSzeM6NOw55GfbhC9T" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PbuFsVzZM5EPfFpLfodZ2G" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Link Id="M5r4lknn4alPoFYwaKF40Z" Ids="LQtLKiC9qr8NcVgzU4mOZG,AVCITonlubFP0mcZ19VEXi" IsHidden="true" />
+            <Link Id="DsgaPiR0uCqNMXAgPMPy1K" Ids="IXJlqma0lakNNDvLV6DBHv,RTt7HOUjgItQYWx8IgHtm0" IsHidden="true" />
+            <Link Id="QVQUXBphEtpPdRjaCDqmSn" Ids="AVCITonlubFP0mcZ19VEXi,UE39dP2DZoNOj6oWFfiB18" />
+            <Link Id="TTv2DtqX0iyNbK8PJRZXzV" Ids="Pqvnb3kH1ETNCZgypE6r9e,IXJlqma0lakNNDvLV6DBHv" />
+            <Link Id="KgihUYSpkN8NFxBuh4ik8a" Ids="L7bSzJq7ai2QFlr1Lrg1w3,OCagX6Z71h3O7RPUpyBrM1" />
+            <Link Id="KsZgE8mPN8pMB5NFJK8xcW" Ids="NVzgO8efJJOLgndLFEALib,Hj8QDuVJ0GAOAT0Q8Y5xeA" />
+            <Link Id="UsqZEWtu7FNLYEqi9MObfh" Ids="PbuFsVzZM5EPfFpLfodZ2G,NIJH30Q87zoLiNAb17BtNJ" />
+            <Link Id="K2mjg45foKjOAoJFWQ658E" Ids="H0mjggPLBuENJ5g6MDadhS,HBcxj5qgrLtN54yf3iQDn6" />
+          </Patch>
+        </Node>
+      </Canvas>
     </Canvas>
     <!--
 
