@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="SSjWf9Jk80pMPbPDxPXrv3" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="GHpn8Ll9hFAPO5n0gu8XYI" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="BfQ9BqV8poEPnZWKYQROv0" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="DYRuwp4ufPyNyKtULooXvw">
     <Canvas Id="QYFOXjrMgATQTcpBMDj2hQ" DefaultCategory="Devices.Astra.HDE" CanvasType="FullCategory">
       <!--
@@ -464,7 +464,7 @@
               <Pin Id="PALIgsyDSCCP7KvYHubNCm" Name="Result" Kind="OutputPin" />
               <Pin Id="QJrRNqy6OmJPex985TtfqZ" Name="Not Assigned" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="Iu0tN9OLAXHOzjc2o7KQpQ" Bounds="472,943" />
+            <ControlPoint Id="Iu0tN9OLAXHOzjc2o7KQpQ" Bounds="470,943" />
             <Pad Id="A3Qgg7mS9UGLDPNc3HhHXW" Bounds="652,561" />
             <Node Bounds="469,795,51,19" Id="Uyas5bJyqHOM6bbHQrosGw">
               <p:NodeReference LastCategoryFullName="Graphics.Skia3d.Transform" LastSymbolSource="VL.Skia3d.vl">
@@ -472,14 +472,15 @@
                 <Choice Kind="ProcessAppFlag" Name="Camera (FOV)" />
               </p:NodeReference>
               <Pin Id="GXLH9ALrKMiPn9tuTKe5bs" Name="Input" Kind="InputPin" />
-              <Pin Id="CZFBqtmZHyeNEZzp05Y74d" Name="FOV" Kind="InputPin" />
+              <Pin Id="P7IF8G8lPsMPrRQp0xFnae" Name="Transformation" Kind="InputPin" />
+              <Pin Id="Jwl7VRcxwXhMOeCDfX7U4t" Name="Vertical FOV" Kind="InputPin" DefaultValue="0.16">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="RFckURRTgB2L6NhbnEZOO4" Name="Aspect" Kind="InputPin" />
               <Pin Id="BpmQHYmiZssPh3esOINMbe" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="T7aDPKNFTNuPGlkrgKBYyM" Comment="FOV" Bounds="565,761,35,28" ShowValueBox="true" isIOBox="true" Value="0.16, 0.12">
-              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Vector2" />
-              </p:TypeAnnotation>
-            </Pad>
             <Node Bounds="468,896,44,19" Id="JYEj1oV79EoMTFSF8nqUHN">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -490,21 +491,43 @@
               <Pin Id="Btfv9NR489hP80lgrT0Oqv" Name="Input 2" Kind="InputPin" />
               <Pin Id="JVzNQ5ijb3fQJy5u7F3wm1" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="469,841,85,19" Id="KuocD9nMXwVNhyHA0te7fO">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia.Transform" LastSymbolSource="VL.Skia.vl">
+            <Node Bounds="468,852,145,19" Id="KuocD9nMXwVNhyHA0te7fO">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="WithinSpace" />
+                <Choice Kind="ProcessAppFlag" Name="Panel" />
               </p:NodeReference>
-              <Pin Id="PSjP2RuakkSMDnZQEaxf1J" Name="Input" Kind="InputPin" />
-              <Pin Id="JNcMYatz97LOGmNTDSQuhw" Name="Sizing" Kind="InputPin" />
-              <Pin Id="Nmu2F1OO0mvPc3BRlq2jLk" Name="Width" Kind="InputPin" />
-              <Pin Id="KTBqLq9gzVQLmFfsQlcE6Z" Name="Height" Kind="InputPin" />
-              <Pin Id="HFlRXagDqHFPsS7QNkumbS" Name="Origin" Kind="InputPin">
-                <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
-                  <Choice Kind="TypeFlag" Name="RectangleAnchor" />
+              <Pin Id="Neuu1X2wzFHOc9iMCl47zV" Name="Bounds" Kind="InputPin" />
+              <Pin Id="BcMgu35tKV8PLtegb9zYl3" Name="Layer Inside" Kind="InputPin" />
+              <Pin Id="Ux5GyLVL1mrORsLV54wLmx" Name="New Space" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="GPh3eox4pePQTi2Ty0PVh5" Name="Space" Kind="InputPin" />
+              <Pin Id="OEjJEj1W9fSMWwR9UNDgkA" Name="Draw Background" Kind="InputPin" DefaultValue="False">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="D3L0a783saoPQnzVkEarpb" Name="Background Color" Kind="InputPin" />
+              <Pin Id="Ap8g6YHgkLlMFqGFFGwFlp" Name="Backdrop Layer" Kind="InputPin" />
               <Pin Id="JQGOaERd6ZvMx1KiDnccxX" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="555,750" Id="RK1v1tZgEjJOKGcE99lVJF">
+              <p:NodeReference LastCategoryFullName="3D.Transform" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Rotate" />
+                <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="3D" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="RJjSYp8GMPBPw8vRV5LnlO" Name="Input" Kind="InputPin" />
+              <Pin Id="BihTFh9CxdhQBgRSUeEF5j" Name="Rotation" Kind="InputPin" DefaultValue="0, 0.5, 0">
+                <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Vector3" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="AzNQAHfpkQXPOHHSe2p4qY" Name="Output" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="VevasoQwL0BP9hFkdsoUMP" Name="Create" />
@@ -570,13 +593,14 @@
           <Link Id="AykJDxStixFQLkjRfZ9T6E" Ids="Iu0tN9OLAXHOzjc2o7KQpQ,IQi0iXA62jmNCapquaTY8b" IsHidden="true" />
           <Link Id="OlL6WcGuvGiOHUr89J8Y1b" Ids="A3Qgg7mS9UGLDPNc3HhHXW,G9mQVwFRFZcMVW3Xp2cuAR" />
           <Link Id="SFW2rf337b3PTlxOm00ipg" Ids="KSioL8qmEfALkwi0F7QzXw,IcIKmrJaDqvNJh53h3Xjhh" />
-          <Link Id="GKLhZHLMvmnOLFCeYSKeoE" Ids="T7aDPKNFTNuPGlkrgKBYyM,CZFBqtmZHyeNEZzp05Y74d" />
           <Link Id="IO86iI6xiIyOweLi8jDn0W" Ids="JVzNQ5ijb3fQJy5u7F3wm1,Iu0tN9OLAXHOzjc2o7KQpQ" />
           <Link Id="Fkt3dNlPkkIONEp2ZDXvRz" Ids="QcbiqYyABK6PS3W0L3m5TF,Btfv9NR489hP80lgrT0Oqv" />
           <Link Id="SwAiMhHIkTILtD03usbJ3u" Ids="H0TIZOHF8rpLqBfffuq5h5,JW5OZQm8glVMcfjotEzOc0" />
           <Link Id="EJV10iEUC7SODbeewCFBW4" Ids="DKxeGMq6PqUOhMta5oHsWd,GXLH9ALrKMiPn9tuTKe5bs" />
-          <Link Id="B8dloHNvnfyOVNnNcCa4FC" Ids="BpmQHYmiZssPh3esOINMbe,PSjP2RuakkSMDnZQEaxf1J" />
           <Link Id="JFf7aWB7slvLJsyfWxtZfy" Ids="JQGOaERd6ZvMx1KiDnccxX,QFn6HWIOgoMQUROBoyqDUb" />
+          <Link Id="UU1PrLKGjOAM9iUMGOKKnl" Ids="AzNQAHfpkQXPOHHSe2p4qY,P7IF8G8lPsMPrRQp0xFnae" />
+          <Link Id="OlGjHx3Qy7eO406nfjVKPY" Ids="A3Qgg7mS9UGLDPNc3HhHXW,Neuu1X2wzFHOc9iMCl47zV" />
+          <Link Id="DYqicB5jpiRLsEMi7PlSmC" Ids="BpmQHYmiZssPh3esOINMbe,BcMgu35tKV8PLtegb9zYl3" />
         </Patch>
       </Node>
     </Canvas>
@@ -601,8 +625,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2020.1.0" />
-  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="2020.1.0" />
+  <NugetDependency Id="PplJ8M06DDYNWsWk2Slfxl" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="Vx0IDKk0ZwjLq5dkCVhG5Z" Location="VL.HDE" Version="2020.1.3" />
   <NugetDependency Id="LIzUWxVeQyvPwz66yFJOpR" Location="VL.Devices.NuiTrack" Version="0.0.0.0" />
   <NugetDependency Id="EYt3AJjqVkCPhtAYomPTsv" Location="VL.Skia3d" Version="0.0.0.0" />
 </Document>
