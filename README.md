@@ -10,7 +10,7 @@ Ensure you've a recent VL version installed (>= 2020.1).
 ### Nuget installation
 In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
 
-    nuget install VL.Devices.Nuitrack -prerelease
+    nuget install VL.Devices.Nuitrack
 
 ### Nuitrack SDK Installation
 
