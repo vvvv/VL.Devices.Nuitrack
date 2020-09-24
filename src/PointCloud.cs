@@ -50,14 +50,14 @@ namespace VL.Devices.Nuitrack
             return builder;
         }
 
-        static Xenko.Core.Mathematics.Vector3 AsVector3(ref Vector3 vector)
+        static Stride.Core.Mathematics.Vector3 AsVector3(ref Vector3 vector)
         {
-            return Unsafe.As<Vector3, Xenko.Core.Mathematics.Vector3>(ref vector);
+            return Unsafe.As<Vector3, Stride.Core.Mathematics.Vector3>(ref vector);
         }
 
-        static Xenko.Core.Mathematics.Color ToColor(in Color3 color)
+        static Stride.Core.Mathematics.Color ToColor(in Color3 color)
         {
-            return new Xenko.Core.Mathematics.Color(color.Red, color.Green, color.Blue);
+            return new Stride.Core.Mathematics.Color(color.Red, color.Green, color.Blue);
         }
     }
 }

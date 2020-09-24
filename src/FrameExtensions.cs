@@ -3,7 +3,7 @@ using System;
 using System.Reactive.Linq;
 using VL.Lib.Basics.Imaging;
 using VL.Lib.Collections;
-using Xenko.Core.Mathematics;
+using Stride.Core.Mathematics;
 
 namespace VL.Devices.Nuitrack
 {
