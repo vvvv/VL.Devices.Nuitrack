@@ -16,38 +16,26 @@ In order to use this library with VL you have to install the nuget that is avail
 
 In order for Nuitrack to work in your system you will need to install the Nuitrack SDK.
 
-Head to (https://nuitrack.com/#api) and download the SDK, this will require opening an account with Nuitrack (if you don't already have one). The free trial will allow you to use the SDK 3 minutes at a time before needing to restart your application/patch.
+Head to (https://nuitrack.com/#api), scroll down to "Plans" and get a license that suits you, after completing the license form, you will get download links, download and install the Windows version compatible with your system (32 or 64 bits). The free trial will allow you to use the SDK 3 minutes at a time before needing to restart your application/patch.
 
-Once downloaded install the Nuitrack SDK following on-screen instructions. (The subsequent steps assume you used C:\Nuitrack as your installation path)
-
-### Setting environment variables
-
-In some cases you will need to set some environment variables in your system before Nuitrack works correctly. For the examples below it is assumed you installed the SDK in C:\Nuitrack, change the paths accordingly to match your installation path.
-
-(Official instructions [here](http://download.3divi.com/Nuitrack/doc/Installation_page.html) )
-
-- Set "NUITRACK_HOME" to C:\Nuitrack\nuitrack\nuitrack
-- Add "C:\Nuitrack\nuitrack\nuitrack\bin" to you "PATH" environment variable
+Once downloaded install the Nuitrack SDK following on-screen instructions.
 
 ### Activate Nuitrack
 
-After the steps above have been done you will need to activate your Nuitrack installation. 
+After the intallation process is done you will need to activate your Nuitrack installation. 
 
 - Make sure you have a compatible sensor connected to your system and that any required drivers or software are installed
-- Head to "C:\Nuitrack\nuitrack\nuitrack\activation_tool" 
-- Run "Nuitrack.exe".
-- Click on Test, after a short while you should see a window with input from your device, click to toggle between color and depth view
-- Back on the main application window click on Add License and paste in the code you got during your registration (if you have registered but do not have a key at hand follow the steps in the section below)
-
-### Getting an activation key
-
-If you have registered on nuitrack.com but for any reason do not have a key at hand, you can head to (https://cognitive.3divi.com/app/nuitrack/dashboard/) and select your key from the "Other licenses" list or Activate a new key using one of the "Activate" buttons (Trial or Available licenses) at the top. The provided key should allow you to activate your copy of Nuitrack SDK.
+- Open the newly installed "Nuitrack App"
+- Select your sensor from the dropdown list
+- Enter your activation code (you should have received an email with this code after getting your license)
+- Select Face Tracking and AI: Skeletal Tracking (Object Detection is not yet supported)
+- Click "Try Nuitrack!". After a few seconds your device should turn on and you should be able to see a video feed with skeleton tracking and a few other features.
 
 ### Using Nuitrack in VL
 
 Once you have gone through the steps above and the VL.Devices.Nuitrack nuget is installed and referenced in your VL document you'll see the category "Nuitrack" under "Devices" in the nodebrowser.
 
-Demos are available via the Help Browser!
+Help Patches are available via the Help Browser! Search for "Nuitrack".
 
 ## Contributing to the development
 If you want to contribute to this repository, clone it into a directory like:
