@@ -1,5 +1,5 @@
 # VL.Devices.Nuitrack
-Set of nodes to use the [Nuitrack API](https://nuitrack.com) in VL.
+A package for using the [Nuitrack](https://nuitrack.com) depth camera API in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
